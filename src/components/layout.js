@@ -1,4 +1,5 @@
 import Footer from './footer';
+import { AnalyticsWrapper } from './analytics';
 
 export default function Layout({ children }) {
   return (
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
       >
         {children}
         <Footer />
+        <AnalyticsWrapper />
       </div>
     </>
   )
