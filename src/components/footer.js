@@ -37,7 +37,7 @@ export default function Footer() {
                 </span>
               </div>
               <div
-                className="mx-3 mt-2 d-flex flex-row justify-content-sm-start justify-content-center"
+                className="mx-3 mt-1 d-flex flex-row justify-content-sm-start justify-content-center"
               >
                 <a
                   className="custom-link font-small text-muted"
@@ -46,7 +46,7 @@ export default function Footer() {
                   Code
                 </a>
                 <span
-                  className="mx-3 text-muted"
+                  className="mx-2 text-muted"
                 >
                   |
                 </span>
@@ -95,11 +95,11 @@ export default function Footer() {
               <div
                 className="d-flex flex-column text-sm-end text-center mx-3"
               >
-                <h5
+                <h6
                   className="mt-3 mb-0"
                 >
                   Credits
-                </h5>
+                </h6>
                 <a
                   className="custom-link font-small"
                   href="https://vercel.com/"
@@ -107,18 +107,28 @@ export default function Footer() {
                 >
                   Powered by Vercel
                 </a>
-                <a
-                  className="custom-link font-small text-muted"
-                  href="https://getbootstrap.com/"
+                <div
+                  className="d-flex flex-row justify-content-sm-end justify-content-center"
                 >
-                  Bootstrap
-                </a>
-                <a
-                  className="custom-link font-small text-muted"
-                  href="https://fonts.google.com/"
-                >
-                  Google Fonts
-                </a>
+
+                  <a
+                    className="custom-link font-small text-muted"
+                    href="https://getbootstrap.com/"
+                  >
+                    Bootstrap
+                  </a>
+                  <span
+                    className="text-muted font-small mx-2"
+                  >
+                    |
+                  </span>
+                  <a
+                    className="custom-link font-small text-muted"
+                    href="https://fonts.google.com/"
+                  >
+                    Google Fonts
+                  </a>
+                </div>
               </div>
             </div>
           </div>
