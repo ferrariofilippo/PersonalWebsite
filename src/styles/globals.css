@@ -55,6 +55,10 @@ footer {
   background: #353535;
 }
 
+.font-small {
+  font-size: 0.85em;
+}
+
 .main-content {
   min-height: 100vh;
 }
