@@ -95,7 +95,7 @@ export default function Now() {
                         alt="Flag of Germany"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/512px-Flag_of_Germany.svg.png"
                       />
-                      Deutsch
+                      German
                     </a>
                   </li>
                 </ul>
