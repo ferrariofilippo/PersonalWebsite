@@ -1,0 +1,16 @@
+.saveapp {
+  background-image: -moz-linear-gradient(315deg, #6C706C 50%, #1A1D1A);
+  background-image: -o-linear-gradient(315deg, #6C706C 50%, #1A1D1A);
+  background-image: -webkit-linear-gradient(315deg, #6C706C 50%, #1A1D1A);
+}
+
+.netkit {
+  background-image: -moz-linear-gradient(315deg, #DF9954 50%, #BE6E46);
+  background-image: -o-linear-gradient(315deg, #DF9954 50%, #BE6E46);
+  background-image: -webkit-linear-gradient(315deg, #DF9954 50%, #BE6E46);
+}
+
+.workInProgress {
+  font-weight: 700;
+  font-size: 2.5em
+}
