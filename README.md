@@ -4,7 +4,7 @@ This is my portfolio website.
 
 ## Credits & Details
 - **Hosting**: <a href="https://vercel.com/">Vercel</a>
-- **Css**: <a href=https://getbootstrap.com/"">Bootstrap</a>
+- **Css**: <a href="https://getbootstrap.com/">Bootstrap</a>
 - **Icons**: <a href="https://fonts.google.com/">Google Fonts</a>
 - **Images**:
   - <a href="https://commons.wikimedia.org/wiki/File:Csharp_Logo.png">C# Logo</a>
