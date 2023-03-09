@@ -37,7 +37,7 @@ export default function Footer() {
                 </span>
               </div>
               <div
-                className="mx-3 mt-1 d-flex flex-row justify-content-sm-start justify-content-center"
+                className="mx-3 mt-1 d-flex flex-row justify-content-sm-start justify-content-center align-items-center"
               >
                 <a
                   className="custom-link font-small text-muted"

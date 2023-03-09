@@ -84,8 +84,7 @@ export default function Skills() {
                 Here it is, the first programming language I've learned.<br />
                 I've been using C# and .NET for three years now. I love it. It's not difficult to learn but it's
                 very powerful and adaptive: you can basically build whatever you need.<br />
-                If you check out my
-                <a href="https://github-com/ferrariofilippo" className="custom-link">GitHub</a>, you will see that
+                If you check out my <a href="https://github-com/ferrariofilippo" className="custom-link">GitHub</a>, you will see that
                 almost all the projects I pushed there are developed using this language.
               </p>
             </div>
@@ -183,8 +182,8 @@ export default function Skills() {
             >
               <h1>WinUI 3</h1>
               <p>
-                Once again, open-source helped me. I learned WinUI 3 while contributing to
-                <a href="https://files.community.com" className="custom-link">Files</a>.<br />
+                Once again, open-source helped me. I learned WinUI 3 while contributing to <a href="https://files.community.com"
+                  className="custom-link">Files</a>.<br />
                 I've never started a personal project using this framework, but given it works using .NET and
                 XAML I can use it efficiently.
               </p>
