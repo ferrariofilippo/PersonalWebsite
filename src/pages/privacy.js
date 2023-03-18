@@ -8,7 +8,7 @@ export default function Privacy() {
         <title>Filippo Ferrario • Privacy</title>
         <meta
           name="description"
-          content="About Privacy"
+          content="Filippo Ferrario website privacy notice"
         />
         <meta
           name="viewport"
@@ -24,7 +24,7 @@ export default function Privacy() {
       >
         <Header />
         <main
-          className="d-flex flex-column align-items-center mt-3"
+          className="d-flex flex-column align-items-center mt-3 justify-content-center"
         >
           <h1>Privacy</h1>
           <p

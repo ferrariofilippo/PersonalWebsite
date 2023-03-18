@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Header from '../components/header';
-import Image from 'next/image';
 import styles from '../styles/Now.module.css';
 
 export default function Now() {
@@ -52,15 +51,10 @@ export default function Now() {
                     Learning
                   </h3>
                 </div>
-                <ul>
+                <ul
+                  className={styles.list}
+                >
                   <li>
-                    <Image
-                      width="128"
-                      height="128"
-                      alt="Rust logo"
-                      src="/rust-logo.png"
-                      className={styles.logo}
-                    />
                     <a
                       href="https://www.rust-lang.org/"
                       className="custom-link"
@@ -69,13 +63,6 @@ export default function Now() {
                     </a>
                   </li>
                   <li>
-                    <Image
-                      width="128"
-                      height="128"
-                      alt="Rust logo"
-                      src="/kotlin-logo.svg"
-                      className={styles.logo}
-                    />
                     <a
                       href="https://kotlinlang.org/"
                       className="custom-link"
@@ -84,19 +71,7 @@ export default function Now() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      title="User:SKopp, User:Madden, and other users, Public domain, via Wikimedia Commons"
-                      href="https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg"
-                      className="custom-link">
-                      <Image
-                        width="128"
-                        height="128"
-                        className={styles.logo}
-                        alt="Flag of Germany"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/512px-Flag_of_Germany.svg.png"
-                      />
-                      German
-                    </a>
+                    German
                   </li>
                 </ul>
               </div>
@@ -124,7 +99,9 @@ export default function Now() {
                     Contributing
                   </h3>
                 </div>
-                <ul>
+                <ul
+                  className={styles.list}
+                >
                   <li>
                     <a
                       href="https://files.community/"
@@ -168,7 +145,9 @@ export default function Now() {
                     Reading
                   </h3>
                 </div>
-                <ul>
+                <ul
+                  className={styles.list}
+                >
                   <li>
                     The Silmarillion, J.R.R. Tolkien
                   </li>

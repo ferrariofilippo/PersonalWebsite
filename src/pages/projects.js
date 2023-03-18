@@ -11,7 +11,7 @@ export default function Projects() {
         <title>Filippo Ferrario • Projects</title>
         <meta
           name="description"
-          content="What are the projects developed by Ferrario Filippo"
+          content="What are the projects developed by Ferrario Filippo?"
         />
         <meta
           name="viewport"
