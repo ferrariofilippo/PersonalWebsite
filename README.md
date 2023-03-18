@@ -13,7 +13,4 @@ This is my portfolio website.
   - <a href="https://git-scm.com/downloads/logos">Git Logo</a>
   - <a href="https://developer.android.com/distribute/marketing-tools/brand-guidelines">Android Logo</a>
   - <a href="https://www.docker.com/company/newsroom/media-resources/">Docker Logo</a>
-  - <a href="https://foundation.rust-lang.org/policies/logo-policy-and-media-guide/">Rust Logo</a>
-  - <a href="https://kotlinlang.org/docs/kotlin-brand-assets.html">Kotlin Logo</a>
-  - <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg">German Flag</a>
   - <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg">Ukranian Flag</a>
