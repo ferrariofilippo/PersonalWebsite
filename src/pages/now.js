@@ -55,20 +55,10 @@ export default function Now() {
                   className={styles.list}
                 >
                   <li>
-                    <a
-                      href="https://www.rust-lang.org/"
-                      className="custom-link"
-                    >
-                      Rust Lang
-                    </a>
+                    Rust Lang
                   </li>
                   <li>
-                    <a
-                      href="https://kotlinlang.org/"
-                      className="custom-link"
-                    >
-                      Kotlin Lang
-                    </a>
+                    Kotlin Lang
                   </li>
                   <li>
                     German
@@ -116,7 +106,7 @@ export default function Now() {
                       className="custom-link"
                     >
                       SaveApp
-                    </a>
+                    </a> (Creator)
                   </li>
                 </ul>
               </div>
@@ -149,10 +139,16 @@ export default function Now() {
                   className={styles.list}
                 >
                   <li>
-                    The Silmarillion, J.R.R. Tolkien
+                    The Hobbit, J.R.R. Tolkien
                   </li>
                   <li>
-                    The Art of Statistics, David Spiegelhalter
+                    Six Easy Pieces, R. Feynman
+                  </li>
+                  <li>
+                    QED, R. Feynman
+                  </li>
+                  <li>
+                    Brave New World, A. Huxley
                   </li>
                 </ul>
               </div>

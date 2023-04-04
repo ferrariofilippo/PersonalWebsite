@@ -15,13 +15,7 @@
 }
 
 .list {
-  text-align: left;
-}
-
-@media screen and (max-width: 768px) {
-  .list {
-    list-style-type: none;
-    margin-left: -32px;
-    text-align: center;
-  }
+  text-align: center;
+  list-style-type: none;
+  margin-left: -32px;
 }

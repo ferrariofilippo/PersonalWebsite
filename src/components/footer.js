@@ -68,7 +68,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://github.com/ferrariofilippo"
-                    className="custom-link text-decoration-none mx-3"
+                    className="custom-link text-decoration-none"
                     style={{ "--color": "#018574", "fontWeight": 600 }}
                   >
                     GH
@@ -77,9 +77,17 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/ferrariofilippo"
-                    className="custom-link text-decoration-none"
+                    className="custom-link text-decoration-none mx-3"
                   >
                     IN
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://stackoverflow.com/users/19737867/filippo-ferrario"
+                    className="custom-link text-decoration-none"
+                  >
+                    SO
                   </a>
                 </li>
                 <li>
