@@ -139,13 +139,13 @@ export default function Now() {
                   className={styles.list}
                 >
                   <li>
-                    The Hobbit, J.R.R. Tolkien
+                    The Hitchhiker's Guide to the Galaxy, D. Adams
                   </li>
                   <li>
-                    Six Easy Pieces, R. Feynman
+                    Six Not So Easy Pieces, R. Feynman
                   </li>
                   <li>
-                    QED, R. Feynman
+                    Numbers Don't Lie, V. Smil
                   </li>
                   <li>
                     Brave New World, A. Huxley
