@@ -1,8 +1,14 @@
-import Head from 'next/head';
-import Header from '../components/header';
-import styles from '../styles/Now.module.css';
+'use server'
 
-export default function Now() {
+import Head from 'next/head';
+import Header from '@/components/header';
+import styles from '@/styles/Now.module.css';
+import Learning from '@/components/learning';
+import Oss from '@/components/oss';
+import Books from '@/components/books';
+import { createClient } from '@supabase/supabase-js';
+
+export default function Now({ learnings, oss, books}) {
   return (
     <>
       <Head>
@@ -29,133 +35,86 @@ export default function Now() {
         >
           <h1>What am I doing right now?</h1>
           <div
-            className="col-12 d-flex flex-column align-items-center my-auto"
+            className='container'
           >
-            <div
-              className="col-12 my-2"
+            <h3
+              className={`mb-auto mt-5 ${styles.subtitle}`}
             >
-              <div
-                className="col-md-6 col-lg-4"
-              >
-                <div
-                  className="d-flex flex-row justify-content-center mb-2"
-                >
-                  <span
-                    className={`material-symbols-outlined ${styles.icon}`}
-                  >
-                    school
-                  </span>
-                  <h3
-                    className={`my-auto ${styles.subtitle}`}
-                  >
-                    Learning
-                  </h3>
-                </div>
-                <ul
-                  className={styles.list}
-                >
-                  <li>
-                    Rust Lang
-                  </li>
-                  <li>
-                    Kotlin Lang
-                  </li>
-                  <li>
-                    German
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div
-              className="col-12 row my-2">
-              <div
-                className="col-md-2 col-lg-4 col-0"
-              />
-              <div
-                className="col-md-6 col-lg-4"
-              >
-                <div
-                  className="d-flex flex-row justify-content-center mb-2"
-                >
-                  <span
-                    className={`material-symbols-outlined ${styles.icon}`}
-                  >
-                    terminal
-                  </span>
-                  <h3
-                    className={`my-auto ${styles.subtitle}`}
-                  >
-                    Contributing
-                  </h3>
-                </div>
-                <ul
-                  className={styles.list}
-                >
-                  <li>
-                    <a
-                      href="https://files.community/"
-                      className="custom-link"
-                    >
-                      Files community
-                    </a> (Developer and Translator)
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/ferrariofilippo/saveapp"
-                      className="custom-link"
-                    >
-                      SaveApp
-                    </a> (Creator)
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div
-              className="col-12 row my-2"
+              Let's start with Learning
+            </h3>
+            <ul
+              id="learning-list"
+              className={styles.list}
             >
-              <div
-                className="col-md-6 col-lg-8 col-0"
-              />
-              <div
-                className="col-md-6 col-lg-4"
-              >
-                <div
-                  className="d-flex flex-row justify-content-center mb-2"
-                >
-                  <span
-                    className={`material-symbols-outlined ${styles.icon}`}
-                  >
-                    library_books
-                  </span>
-                  <h3
-                    className={`my-auto ${styles.subtitle}`}
-                  >
-                    Reading
-                  </h3>
-                </div>
-                <ul
-                  className={styles.list}
-                >
-                  <li>
-                    The Hitchhiker's Guide to the Galaxy, D. Adams
-                  </li>
-                  <li>
-                    Six Not So Easy Pieces, R. Feynman
-                  </li>
-                  <li>
-                    Numbers Don't Lie, V. Smil
-                  </li>
-                  <li>
-                    Brave New World, A. Huxley
-                  </li>
-                </ul>
-              </div>
-            </div>
+              <Learning learnings={learnings} />
+            </ul>
+
+            <h3
+              className={`mb-auto mt-5 ${styles.subtitle}`}
+            >
+              Open-Source-Software
+            </h3>
+            <ul
+              id="oss-list"
+              className={styles.list}
+            >
+              <Oss oss={oss} />
+            </ul>
+
+            <h3
+              className={`my-auto ${styles.subtitle}`}
+            >
+              What am I reading?
+            </h3>
+            <ul
+              id="reading-list"
+              className={styles.list}
+            >
+              <Books books={books} />
+            </ul>
           </div>
         </main>
       </div>
     </>
-  )
+  );
+}
+
+export async function getServerSideProps() {
+  const supabase = createClient(
+    process.env.SUPABASE_URL, 
+    process.env.SUPABASE_KEY, 
+    { 
+      persistSession: false
+    }
+  );
+
+  async function getLearnings() {
+    const { data } = await supabase.from('learning').select();
+
+    return data;
+  }
+
+  async function getOss() {
+    const { data } = await supabase.from('oss').select();
+    
+    return data;
+  }
+
+  async function getBooks() {
+    const { data } = await supabase.from('books').select();
+
+    return data;
+  }
+
+  const learnings = await getLearnings();
+  const oss = await getOss();
+  const books = await getBooks();
+
+  return {
+    props: {
+      learnings,
+      oss,
+      books
+    }
+  };
 }
