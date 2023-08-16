@@ -31,7 +31,7 @@ export default function Footer() {
                   />
                 </a>
                 <span
-                  className="text-muted"
+                  className="text-light"
                 >
                   © 2023 Filippo Ferrario
                 </span>
@@ -40,18 +40,18 @@ export default function Footer() {
                 className="mx-3 mt-1 d-flex flex-row justify-content-sm-start justify-content-center align-items-center"
               >
                 <a
-                  className="custom-link font-small text-muted"
+                  className="custom-link font-small text-light"
                   href="https://github.com/ferrariofilippo/PersonalWebsite"
                 >
                   Code
                 </a>
                 <span
-                  className="mx-2 text-muted"
+                  className="mx-2 text-light"
                 >
                   |
                 </span>
                 <a
-                  className="custom-link font-small text-muted"
+                  className="custom-link font-small text-light"
                   href="/privacy"
                 >
                   Privacy

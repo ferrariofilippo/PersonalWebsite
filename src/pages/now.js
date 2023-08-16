@@ -62,7 +62,7 @@ export default function Now({ learnings, oss, books}) {
             </ul>
 
             <h3
-              className={`my-auto ${styles.subtitle}`}
+              className={`mb-auto mt-5 ${styles.subtitle}`}
             >
               What am I reading?
             </h3>
