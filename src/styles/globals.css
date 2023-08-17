@@ -1,38 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 ::selection {
-  background-color: #ECEFF4;
-  color: #018574;
+  background-color: #FAFAFA;
+  color: #0F766E;
 }
 
 ::-moz-selection {
-  background-color: #ECEFF4;
-  color: #018574;
-}
-
-#scrollToTopBtn {
-  display: none;
-  position: fixed;
-  left: 16px;
-  bottom: 16px;
-  z-index: 101;
-  height: 48px;
-  width: 48px;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  background-color: #ACFCD9;
-}
-
-#upArrow {
-  color: #018574;
-  font-weight: 900;
-  font-size: 2em;
-  vertical-align: middle;
-}
-
-h1 {
-  text-align: center;
-  color: #ACFCD9;
-  font-size: 3.5em;
+  background-color: #FAFAFA;
+  color: #0F766E;
 }
 
 h2 {
@@ -43,56 +20,24 @@ p {
   font-size: 1em;
 }
 
-body {
-  background-color: #018574;
-}
-
 main {
   min-height: 90vh;
-}
-
-footer {
-  background: #353535;
 }
 
 .font-small {
   font-size: 0.8em;
 }
 
-.main-content {
-  min-height: 100vh;
-}
-
 .text {
-  color: #ECEFF4;
+  color: #FAFAFA;
   font-family: 'Tilt Neon';
   font-size: large;
 }
 
-.custom-link {
-  --color: #ECEFF4;
-  color: var(--color);
-}
-
-.custom-link:hover {
-  font-weight: 600;
-  color: #ACFCD9;
-}
-
-.custom-link:visited {
-  color: #ECEFF4;
-}
-
-.navbar-brand {
-  font-size: x-large;
-  font-weight: 600;
-}
-
 .nav-item {
-  --color: #ACFCD9;
+  --color: #14B8A6;
   --thickness: 3px;
   --_g: #0000 25%, var(--color) 0;
-
   margin-left: 4px;
   padding: var(--thickness);
   background:
@@ -114,12 +59,12 @@ footer {
 
 @media screen and (max-width: 768px) {
   main {
-      min-height: 84vh;
+    min-height: 84vh;
   }
 }
 
 @media screen and (max-width: 576px) {
   main {
-      min-height: 76vh;
+    min-height: 76vh;
   }
 }

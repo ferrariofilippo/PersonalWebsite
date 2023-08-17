@@ -6,13 +6,13 @@ export default function Header() {
     <>
       <header>
         <div
-          className="container"
+          className="container mx-auto"
         >
           <div
-            className="d-flex flex-wrap justify-content-center py-3"
+            className="flex flex-wrap justify-center py-3"
           >
             <a
-              className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none custom-link navbar-brand"
+              className="flex align-middle mb-3 md:mb-0 md:me-auto hover:text-[#ACFCD9]"
               href="/"
             >
               <Image
@@ -20,23 +20,22 @@ export default function Header() {
                 src="/ferrariofilippo.png"
                 width="36"
                 height="36"
-                className="rounded-4 mx-3"
+                className="rounded-full mx-3 h-8 w-8"
               />
               <span
-                className="navbar-brand"
+                className="py-auto font-semibold text-2xl"
               >
                 Filippo Ferrario
               </span>
             </a>
-
             <ul
-              className="nav nav-pills justify-content-evenly"
+              className="flex gap-x-1 justify-evenly flex-wrap"
             >
               <li
                 className="nav-item"
               >
                 <Link
-                  className="nav-link custom-link"
+                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
                   href="/"
                 >
                   Home
@@ -46,7 +45,7 @@ export default function Header() {
                 className="nav-item"
               >
                 <Link
-                  className="nav-link custom-link"
+                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
                   href="/now"
                 >
                   Now
@@ -56,7 +55,7 @@ export default function Header() {
                 className="nav-item"
               >
                 <Link
-                  className="nav-link custom-link"
+                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
                   href="/projects"
                 >
                   Projects
@@ -66,17 +65,16 @@ export default function Header() {
                 className="nav-item"
               >
                 <Link
-                  className="nav-link custom-link"
+                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
                   href="/skills"
                 >
                   Skills
                 </Link>
               </li>
               <li
-                className="d-flex align-items-center m-1"
+                className="m-1"
               >
                 <a
-                  className="custom-link"
                   title="Government of Ukraine, Public domain, via Wikimedia Commons"
                   href="https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg"
                 >

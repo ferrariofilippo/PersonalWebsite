@@ -25,24 +25,24 @@ export default function Skills() {
       </Head>
       <ScrollToTop />
       <div
-        className="main-content container"
+        className="min-h-screen container mx-auto sm:mb-0 mb-5"
       >
         <Header />
         <main
-          className="d-flex flex-column align-items-center justify-content-between"
+          className="flex flex-col items-center justify-between"
         >
           <div
-            className="container my-auto"
+            className="container my-auto sm:mx-0 mx-1"
           >
             <h2>Everything fine, but let's come to facts...</h2>
             <h1
-              className="mt-3"
+              className='mt-3 text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
             >
               What are my skills?
             </h1>
           </div>
           <a
-            className="custom-link"
+            className="underline text-neutral-50 hover:text-[#ACFCD9] hover:font-semibold"
             href="#c-sharp"
           >
             Learn more
@@ -50,17 +50,17 @@ export default function Skills() {
         </main>
       </div>
       <div
-        className="d-flex flex-column"
+        className="flex flex-col"
       >
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.cSharp}`}
+          className={`min-h-screen flex justify-center ${styles.cSharp}`}
           id="c-sharp"
         >
           <div
-            className="container d-flex flex-md-row flex-column align-items-center py-5 justify-content-evenly"
+            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex justify-content-center"
+              className="md:w-1/2 w-full flex justify-center"
             >
               <a
                 title="Andres15alvarez, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
@@ -72,14 +72,18 @@ export default function Skills() {
                   height="256"
                   alt="Csharp Logo"
                   src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
-                  className="img-fluid logo"
+                  className="object-scale-down logo"
                 />
               </a>
             </div>
             <div
-              className="col-md-6 col-12 text-center mt-md-0 mt-2"
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
-              <h1>C#</h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
+                C#
+              </h1>
               <p>
                 Here it is, the first programming language I've learned.<br />
                 I've been using C# and .NET for three years now. I love it. It's not difficult to learn but it's
@@ -91,27 +95,31 @@ export default function Skills() {
           </div>
         </div>
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.python}`}
+          className={`min-h-screen flex justify-center ${styles.python}`}
           id="python"
         >
           <div
-            className="container d-flex flex-md-row flex-column align-items-center py-5 justify-content-evenly"
+            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex justify-content-center"
+              className="md:w-1/2 w-full flex justify-center"
             >
               <Image
                 width="256"
                 height="256"
                 alt="python"
                 src="/python-logo.svg"
-                className="img-fluid logo"
+                className="object-scale-down logo"
               />
             </div>
             <div
-              className="col-md-6 col-12 text-center mt-md-0 mt-2"
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
-              <h1>Python</h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
+                Python
+              </h1>
               <p>
                 Is there still anyone who doesn't know Python?<br />
                 I love Python because of its simplicity: it's easy to read and use.<br />
@@ -124,27 +132,31 @@ export default function Skills() {
           </div>
         </div>
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.git}`}
+          className={`min-h-screen flex justify-center ${styles.git}`}
           id="git"
         >
           <div
-            className="container d-flex flex-md-row flex-column align-items-center py-5 justify-content-evenly"
+            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex justify-content-center"
+              className="md:w-1/2 w-full flex justify-center"
             >
               <Image
                 width="256"
                 height="256"
                 alt="git"
                 src="/git-logo.svg"
-                className="img-fluid logo"
+                className="object-scale-down logo"
               />
             </div>
             <div
-              className="col-md-6 col-12 text-center mt-md-0 mt-2"
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
-              <h1>Git</h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
+                Git
+              </h1>
               <p>
                 Contributing to open-source projects forced me to learn how to use Git and GitHub. If I have to
                 be honest, that was one of the best things I could have done.<br />
@@ -154,14 +166,14 @@ export default function Skills() {
           </div>
         </div>
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.winUi}`}
+          className={`min-h-screen flex justify-center ${styles.winUi}`}
           id="win-ui"
         >
           <div
-            className="container d-flex flex-md-row flex-column align-items-center justify-content-evenly"
+            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex justify-content-center"
+              className="md:w-1/2 w-full flex justify-center"
             >
               <a
                 title="Microsoft, MIT &lt;http://opensource.org/licenses/mit-license.php&gt;, via Wikimedia Commons"
@@ -173,14 +185,18 @@ export default function Skills() {
                   height="256"
                   alt="Logo-winui"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo-winui.svg/256px-Logo-winui.svg.png"
-                  className="logo img-fluid"
+                  className="logo object-scale-down"
                 />
               </a>
             </div>
             <div
-              className="col-md-6 col-12 text-center"
+              className="md:w-1/2 w-full text-center"
             >
-              <h1>WinUI 3</h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
+                WinUI 3
+              </h1>
               <p>
                 Once again, open-source helped me. I learned WinUI 3 while contributing to <a href="https://files.community.com"
                   className="custom-link">Files</a>.<br />
@@ -191,27 +207,31 @@ export default function Skills() {
           </div>
         </div>
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.android}`}
+          className={`min-h-screen flex justify-center ${styles.android}`}
           id="android"
         >
           <div
-            className="container d-flex flex-md-row flex-column align-items-center py-5 justify-content-evenly"
+            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex justify-content-center"
+              className="md:w-1/2 w-full flex justify-center"
             >
               <Image
                 width="256"
                 height="256"
                 alt="android"
                 src="/android-logo.svg"
-                className="img-fluid logo"
+                className="object-scale-down logo"
               />
             </div>
             <div
-              className="col-md-6 col-12 text-center mt-md-0 mt-2"
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
-              <h1>Android</h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
+                Android
+              </h1>
               <p>
                 I learned Android development almost entirely by myself, thanks to online documentation and
                 obviously to StackOverflow.<br />
@@ -225,27 +245,31 @@ export default function Skills() {
           </div>
         </div>
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.docker}`}
+          className={`min-h-screen flex justify-center ${styles.docker}`}
           id="docker"
         >
           <div
-            className="container d-flex flex-md-row flex-column align-items-center py-5 justify-content-evenly"
+            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex justify-content-center"
+              className="md:w-1/2 w-full flex justify-center"
             >
               <Image
                 width="256"
                 height="256"
                 alt="docker"
                 src="/docker-logo.png"
-                className="img-fluid"
+                className="object-scale-down"
               />
             </div>
             <div
-              className="col-md-6 col-12 text-center mt-md-0 mt-2"
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
-              <h1>Docker</h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
+                Docker
+              </h1>
               <p>
                 I learned how to use Docker at school. Honestly, in the beginning, I hated it, because of the
                 length of some parameter lists.<br />

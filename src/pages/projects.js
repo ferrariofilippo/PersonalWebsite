@@ -25,21 +25,23 @@ export default function Projects() {
       </Head>
       <ScrollToTop />
       <div
-        className="main-content container"
+        className="min-h-screen container mx-auto sm:mb-0 mb-5"
       >
         <Header />
         <main
-          className="d-flex flex-column align-items-center justify-content-between"
+          className="flex flex-col items-center justify-between"
         >
           <div
             className="container my-auto"
           >
-            <h1 className="text-center">
+            <h1
+              className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+            >
               What have I developed in my free-time?
             </h1>
           </div>
           <a
-            className="custom-link"
+            className="underline text-neutral-50 hover:text-[#ACFCD9] hover:font-semibold"
             href="#saveapp"
           >
             Learn more
@@ -47,17 +49,17 @@ export default function Projects() {
         </main>
       </div>
       <div
-        className="d-flex flex-column"
+        className="flex flex-col"
       >
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.saveapp}`}
+          className={`min-h-screen flex justify-center ${styles.saveapp}`}
           id="saveapp"
         >
           <div
-            className="container d-flex flex-md-row flex-column align-items-center py-5 justify-content-evenly"
+            className="container sm:mx-auto mx-1 flex md:flex-row flex flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex flex-column align-items-center"
+              className="md:w-1/2 w-full flex flex-col items-center"
             >
               <span
                 className={styles.workInProgress}
@@ -65,7 +67,7 @@ export default function Projects() {
                 Logo
               </span>
               <span
-                className="work-in-progress text-center"
+                className="text-[2.5em] font-semibold text-center"
               >
                 Work In Progress
               </span>
@@ -76,9 +78,11 @@ export default function Projects() {
               </span>
             </div>
             <div
-              className="col-md-6 col-12 text-center mt-md-0 mt-2"
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
-              <h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
                 SaveApp
               </h1>
               <p>
@@ -86,19 +90,19 @@ export default function Projects() {
                 Developed using C# and Xamarin.Forms, SaveApp supports simple expenses, budgets and
                 subscriptions.<br />
                 It lets you visualize your statistics thanks to elegant charts.<br />
-                Do you want to know more? See <a className="custom-link" href="https://github.com/ferrariofilippo/SaveApp">GitHub</a> repository.
+                Do you want to know more? See <a className="text-neutral-50 underline hover:font-semibold hover:text-[#ACFCD9]" href="https://github.com/ferrariofilippo/SaveApp">GitHub</a> repository.
               </p>
             </div>
           </div>
         </div>
         <div
-          className={`min-vh-100 d-flex justify-content-center ${styles.netkit}`}
+          className={`min-h-screen flex justify-center ${styles.netkit}`}
           id="netkit">
           <div
-            className="container d-flex flex-md-row flex-column align-items-center py-5 justify-content-evenly"
+            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="col-md-6 col-12 d-flex flex-column align-items-center"
+              className="md:w-1/2 w-full flex flex-col items-center"
             >
               <span
                 className={styles.workInProgress}
@@ -106,7 +110,7 @@ export default function Projects() {
                 Logo
               </span>
               <span
-                className="work-in-progress text-center"
+                className="text-[2.5em] font-semibold text-center"
               >
                 Work In Progress
               </span>
@@ -116,16 +120,18 @@ export default function Projects() {
               </span>
             </div>
             <div
-              className="col-md-6 col-12 text-center mt-md-0 mt-2"
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
-              <h1>
+              <h1
+                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              >
                 NetKit
               </h1>
               <p>
                 Having trouble with routine networking stuff? NetKit is here to help you!<br />
                 This simple Xamarin.Forms Android application is built to help you with subnetting, IPv6 and
                 ACLs.<br />
-                See <a className="custom-link" href="https://github.com/ferrariofilippo/NetKit">GitHub</a> repository to learn more.
+                See <a className="text-neutral-50 underline hover:font-semibold hover:text-[#ACFCD9]" href="https://github.com/ferrariofilippo/NetKit">GitHub</a> repository to learn more.
               </p>
             </div>
           </div>

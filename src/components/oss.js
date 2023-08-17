@@ -3,13 +3,14 @@
 export default function Oss({ oss }) {
   return oss?.map((software) => (
     <li
+      className="max-w-screen px-1"
       key={`${software['id']}_${software['name']}`}
     >
       <h4
         className="mb-0 mt-3"
       >
         <a
-          className='custom-link text-decoration-none'
+          className='underline hover:text-[#ACFCD9] hover:font-semibold'
           href={software['url']}
         >
           {software['name']}

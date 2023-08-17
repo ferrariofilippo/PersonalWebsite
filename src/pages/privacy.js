@@ -20,18 +20,22 @@ export default function Privacy() {
         />
       </Head>
       <div
-        className="main-content container"
+        className="min-h-screen container mx-auto sm:mb-0 mb-5"
       >
         <Header />
         <main
-          className="d-flex flex-column align-items-center mt-3 justify-content-center"
+          className="flex flex-col items-center mt-3 justify-center"
         >
-          <h1>Privacy</h1>
-          <p
-            className="text-center col-lg-8 col-12 mt-3"
+          <h1
+            className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
           >
-            First of all: this site is <a href="https://github.com/ferrariofilippo/PersonalWebsite" className="custom-link">open-source</a>.<br />
-            <em>ferrariofilippo.vercel.app</em> uses <a href="https://vercel.com/analytics" className="custom-link">Vercel Analytics</a> to collect anonymous data about its users, such as which pages they visit and how much time they spend on them.<br />
+            Privacy
+          </h1>
+          <p
+            className="text-center lg:w-2/3 w-full mt-3 px-2"
+          >
+            First of all: this site is <a href="https://github.com/ferrariofilippo/PersonalWebsite" className="text-neutral-50 underline hover:text-[#ACFCD9] hover:font-semibold">open-source</a>.<br />
+            <em>ferrariofilippo.vercel.app</em> uses <a href="https://vercel.com/analytics" className="text-neutral-50 underline hover:text-[#ACFCD9] hover:font-semibold">Vercel Analytics</a> to collect anonymous data about its users, such as which pages they visit and how much time they spend on them.<br />
             This data is <strong>exclusively used by me</strong> to better understand what I should improve.
           </p>
         </main>

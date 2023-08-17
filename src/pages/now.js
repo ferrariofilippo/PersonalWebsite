@@ -2,7 +2,6 @@
 
 import Head from 'next/head';
 import Header from '@/components/header';
-import styles from '@/styles/Now.module.css';
 import Learning from '@/components/learning';
 import Oss from '@/components/oss';
 import Books from '@/components/books';
@@ -27,48 +26,50 @@ export default function Now({ learnings, oss, books}) {
         />
       </Head>
       <div
-        className="main-content container"
+        className="min-h-screen container sm:mx-auto mb-8"
       >
         <Header />
         <main
-          className="d-flex flex-column align-items-center mt-3"
+          className="flex flex-col mt-3"
         >
-          <h1>What am I doing right now?</h1>
+          <h1
+            className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+          >
+            What am I doing right now?
+          </h1>
           <div
-            className='container'
+            className='flex flex-col'
           >
             <h3
-              className={`mb-auto mt-5 ${styles.subtitle}`}
+              className="text-3xl mb-auto mt-8 text-center text-[#ACFCD9]"
             >
               Let's start with Learning
             </h3>
             <ul
               id="learning-list"
-              className={styles.list}
+              className="list-none text-center sm:mx-0 mx-1"
             >
               <Learning learnings={learnings} />
             </ul>
-
             <h3
-              className={`mb-auto mt-5 ${styles.subtitle}`}
+              className="text-3xl mb-auto mt-8 text-center text-[#ACFCD9]"
             >
               Open-Source-Software
             </h3>
             <ul
               id="oss-list"
-              className={styles.list}
+              className="list-none text-center sm:mx-0 mx-1"
             >
               <Oss oss={oss} />
             </ul>
-
             <h3
-              className={`mb-auto mt-5 ${styles.subtitle}`}
+            className="text-3xl mb-auto mt-8 text-center text-[#ACFCD9]"
             >
               What am I reading?
             </h3>
             <ul
               id="reading-list"
-              className={styles.list}
+              className="list-none text-center sm:mx-0 mx-1"
             >
               <Books books={books} />
             </ul>

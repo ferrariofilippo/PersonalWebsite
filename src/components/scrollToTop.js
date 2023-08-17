@@ -7,12 +7,13 @@ export default function ScrollToTop() {
   return (
     <>
       <button
-        className="p-0"
+        className="p-0 hidden fixed left-[16px] bottom-[16px] z-[101] h-[48px] w-[48px] rounded-full bg-[#ACFCD9]"
         id="scrollToTopBtn"
         onClick={scrollToTop}
+        name="scrolltotopbutton"
       >
         <span
-          className="material-symbols-outlined"
+          className="material-symbols-outlined text-[2em] font-black align-middle text-teal-600"
           id="upArrow"
         >
           arrow_upward

@@ -21,35 +21,34 @@ export default function Home() {
         />
       </Head>
       <div
-        className="main-content container"
+        className="min-h-screen container mx-auto md:mb-0 mb-8"
       >
         <Header />
         <main
-          className="d-flex flex-md-row flex-column align-middle"
+          className="flex md:flex-row flex-col align-middle"
         >
           <div
-            className="d-flex flex-column align-items-center my-auto col-md-6 col-12"
+            className="flex flex-col justify-center lg:w-1/2 md:w-1/3 w-full"
           >
             <Image
               width="256"
               height="256"
               alt="Ferrario Filippo"
               src="/ferrariofilippo.png"
-              className="rounded-5 img-fluid mainImg"
+              className="rounded-2xl object-scale-down mx-auto"
             />
           </div>
-
           <div
-            className="col-md-6 col-12 my-sm-auto mt-5 px-4"
+            className="lg:w-1/2 md:w-2/3 w-full md:my-auto mt-8 px-4"
           >
             <h3
-              className='text-md-start text-center'
+              className='md:text-start text-center text-2xl text-[#ACFCD9]'
             >
               About me
             </h3>
             <p>
               I'm a student and an open-source contributor.<br />
-              I study Mathematical Engineering at <a href="https://www.polimi.it/" className="custom-link">Politecnico di Milano</a>.<br />
+              I study Mathematical Engineering at <a href="https://www.polimi.it/" className="hover:text-teal-400 hover:font-semibold underline">Politecnico di Milano</a>.<br />
               I love Maths and Computer Science - they're about the same things: solving problems, optimizing processes and finding creative ways to achieve your goals.<br />
               Maths is fascinating: you can find it everywhere, and it is so good at explaining most - if not all - things.<br />
               Programming is a tool that lets you solve any problem you can think of.<br />

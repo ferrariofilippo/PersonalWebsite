@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <>
       <div
-        className='d-flex flex-column text'
+        className='flex flex-col text'
       >
         {children}
         <Footer />

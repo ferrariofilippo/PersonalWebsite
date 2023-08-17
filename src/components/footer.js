@@ -4,22 +4,22 @@ export default function Footer() {
   return (
     <>
       <footer
-        className="mt-auto"
+        className="mt-auto bg-neutral-800"
       >
         <div
-          className="container"
+          className="container mx-auto pt-1"
         >
           <div
-            className="d-flex flex-wrap justify-content-between align-items-center border-top py-3 mt-3 border-top"
+            className="flex flex-wrap justify-between align-center border-t py-3 mt-3"
           >
             <div
-              className="col-sm-8 col-12 d-flex flex-column mb-auto"
+              className="sm:w-2/3 w-full flex flex-col mb-auto"
             >
               <div
-                className="d-flex align-items-center flex-sm-row flex-column mx-sm-0 mx-auto"
+                className="flex items-center sm:flex-row flex-col sm:mx-0 mx-auto sm:gap-y-0 gap-y-2"
               >
                 <a
-                  className="text-decoration-none"
+                  className="no-underline"
                   href="/"
                 >
                   <Image
@@ -27,31 +27,31 @@ export default function Footer() {
                     src="/ferrariofilippo.png"
                     height="32"
                     width="32"
-                    className="rounded-4 mx-3"
+                    className="rounded-full mx-3"
                   />
                 </a>
                 <span
-                  className="text-light"
+                  className="text-neutral-50 my-auto"
                 >
                   © 2023 Filippo Ferrario
                 </span>
               </div>
               <div
-                className="mx-3 mt-1 d-flex flex-row justify-content-sm-start justify-content-center align-items-center"
+                className="mx-3 mt-1 flex flex-row sm:justify-start justify-center"
               >
                 <a
-                  className="custom-link font-small text-light"
+                  className="no-underline text-sm text-neutral-50 my-auto hover:text-[#ACFCD9] hover:font-semibold"
                   href="https://github.com/ferrariofilippo/PersonalWebsite"
                 >
                   Code
                 </a>
                 <span
-                  className="mx-2 text-light"
+                  className="mx-2 text-neutral-50"
                 >
                   |
                 </span>
                 <a
-                  className="custom-link font-small text-light"
+                  className="text-sm text-neutral-50 my-auto hover:text-[#ACFCD9] hover:font-semibold"
                   href="/privacy"
                 >
                   Privacy
@@ -60,16 +60,15 @@ export default function Footer() {
             </div>
 
             <div
-              className="col-sm-4 col-12 d-flex flex-column"
+              className="sm:w-1/3 w-full flex flex-col"
             >
               <ul
-                className="nav  justify-content-sm-end justify-content-center list-untyled d-flex mx-sm-0 mx-auto mt-sm-0 mt-3"
+                className="nav sm:justify-end justify-center list-none flex sm:mx-0 mx-auto sm:mt-0 mt-3"
               >
                 <li>
                   <a
                     href="https://github.com/ferrariofilippo"
-                    className="custom-link text-decoration-none"
-                    style={{ "--color": "#018574", "fontWeight": 600 }}
+                    className="hover:text-[#ACFCD9] font-semibold no-underline text-teal-500"
                   >
                     GH
                   </a>
@@ -77,7 +76,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/ferrariofilippo"
-                    className="custom-link text-decoration-none mx-3"
+                    className="hover:text-[#ACFCD9] hover:font-semibold no-underline mx-3"
                   >
                     IN
                   </a>
@@ -85,7 +84,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://stackoverflow.com/users/19737867/filippo-ferrario"
-                    className="custom-link text-decoration-none"
+                    className="hover:text-[#ACFCD9] hover:font-semibold no-underline"
                   >
                     SO
                   </a>
@@ -93,7 +92,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://twitter.com/fferrario4"
-                    className="custom-link text-decoration-none mx-3"
+                    className="hover:text-[#ACFCD9] hover:font-semibold no-underline mx-3"
                   >
                     TW
                   </a>
@@ -101,7 +100,7 @@ export default function Footer() {
               </ul>
 
               <div
-                className="d-flex flex-column text-sm-end text-center mx-3"
+                className="flex flex-col sm:text-end text-center mx-3"
               >
                 <h6
                   className="mt-3 mb-0"
@@ -109,29 +108,27 @@ export default function Footer() {
                   Credits
                 </h6>
                 <a
-                  className="custom-link font-small"
+                  className="hover:text-[#ACFCD9] hover:font-semibold text-teal-500 text-sm font-semibold"
                   href="https://vercel.com/"
-                  style={{ "--color": "#018574", "fontWeight": 600 }}
                 >
                   Powered by Vercel
                 </a>
                 <div
-                  className="d-flex flex-row justify-content-sm-end justify-content-center"
+                  className="flex flex-row sm:justify-end justify-center"
                 >
-
                   <a
-                    className="custom-link font-small text-muted"
-                    href="https://getbootstrap.com/"
+                    className="hover:text-[#ACFCD9] hover:font-semibold text-sm text-neutral-50"
+                    href="https://tailwindcss.com"
                   >
-                    Bootstrap
+                    Tailwind
                   </a>
                   <span
-                    className="text-muted font-small mx-2"
+                    className="text-neutral-50 text-sm mx-2"
                   >
                     |
                   </span>
                   <a
-                    className="custom-link font-small text-muted"
+                    className="hover:text-[#ACFCD9] hover:font-semibold text-sm text-neutral-50"
                     href="https://fonts.google.com/"
                   >
                     Google Fonts
