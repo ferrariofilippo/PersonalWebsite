@@ -91,10 +91,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/fferrario4"
+                    href="https://x.com/fferrario4"
                     className="hover:text-[#ACFCD9] hover:font-semibold no-underline mx-3"
                   >
-                    TW
+                    X
                   </a>
                 </li>
               </ul>
