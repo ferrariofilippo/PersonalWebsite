@@ -1,5 +1,3 @@
-'use server'
-
 import Head from 'next/head';
 import Header from '@/components/header';
 import Learning from '@/components/learning';

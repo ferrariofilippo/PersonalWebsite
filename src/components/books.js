@@ -1,5 +1,3 @@
-'use server';
-
 export default function Books({ books }) {
   return books?.map((book) => (
     <li

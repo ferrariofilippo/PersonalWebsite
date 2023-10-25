@@ -1,5 +1,3 @@
-'use server';
-
 export default function Oss({ oss }) {
   return oss?.map((software) => (
     <li
