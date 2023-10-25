@@ -36,7 +36,7 @@ export default function Now({ learnings, oss, books}) {
             What am I doing right now?
           </h1>
           <div
-            className='flex flex-col'
+            className='flex flex-col my-auto'
           >
             <h3
               className="text-3xl mb-auto mt-8 text-center text-[#ACFCD9]"

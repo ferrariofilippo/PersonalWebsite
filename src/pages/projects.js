@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/header';
+import Image from 'next/image';
 import Scroll from '../components/scroll';
 import ScrollToTop from '../components/scrollToTop';
 import styles from '../styles/Projects.module.css';
@@ -61,7 +62,14 @@ export default function Projects() {
             <div
               className="md:w-1/2 w-full flex flex-col items-center"
             >
-              <span
+              <Image
+                width="256"
+                height="256"
+                alt="SaveApp Logo"
+                src="/saveapp_logo.png"
+                className="object-scale-down rounded-full max-w-[128px]"
+              />
+              {/* <span
                 className={styles.workInProgress}
               >
                 Logo
@@ -75,7 +83,7 @@ export default function Projects() {
                 className="text-center"
               >
                 (actually not)
-              </span>
+              </span> */}
             </div>
             <div
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
