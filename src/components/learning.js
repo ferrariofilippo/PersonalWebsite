@@ -1,5 +1,3 @@
-'use server';
-
 export default function Learning({ learnings }) {
   return learnings?.map((learning) => (
     <li
