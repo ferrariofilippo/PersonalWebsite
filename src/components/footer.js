@@ -10,7 +10,7 @@ export default function Footer() {
           className="container mx-auto pt-1"
         >
           <div
-            className="flex flex-wrap justify-between align-center border-t py-3 mt-3"
+            className="flex flex-wrap justify-between align-center border-t border-neutral-500 py-3 mt-3"
           >
             <div
               className="sm:w-2/3 w-full flex flex-col mb-auto"
@@ -91,8 +91,16 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://x.com/fferrario4"
+                    href="mailto:ferrario.filippo.dev@gmail.com"
                     className="hover:text-[#ACFCD9] hover:font-semibold no-underline mx-3"
+                  >
+                    EM
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/fferrario4"
+                    className="hover:text-[#ACFCD9] hover:font-semibold no-underline me-3"
                   >
                     X
                   </a>

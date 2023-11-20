@@ -10,7 +10,7 @@ export default function Learning({ learnings }) {
         {learning['title']}
       </h4>
       <p
-        className="mt-0 mb-4"
+        className="mt-0 mb-4 xl:w-4/7 md:w-2/3 w-full sm:mx-auto px-4"
       >
         {learning['content']}
       </p>

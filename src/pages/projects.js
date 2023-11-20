@@ -69,21 +69,6 @@ export default function Projects() {
                 src="/saveapp_logo.png"
                 className="object-scale-down rounded-full max-w-[128px]"
               />
-              {/* <span
-                className={styles.workInProgress}
-              >
-                Logo
-              </span>
-              <span
-                className="text-[2.5em] font-semibold text-center"
-              >
-                Work In Progress
-              </span>
-              <span
-                className="text-center"
-              >
-                (actually not)
-              </span> */}
             </div>
             <div
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
@@ -94,11 +79,11 @@ export default function Projects() {
                 SaveApp
               </h1>
               <p>
-                Do you want to track your net-worth from your phone? SaveApp is what you need!<br />
-                Developed using C# and Xamarin.Forms, SaveApp supports simple expenses, budgets and
-                subscriptions.<br />
-                It lets you visualize your statistics thanks to elegant charts.<br />
-                Do you want to know more? See <a className="text-neutral-50 underline hover:font-semibold hover:text-[#ACFCD9]" href="https://github.com/ferrariofilippo/SaveApp">GitHub</a> repository.
+                Do you want to track your net-worth from your phone? Do you need the best budgeting app?<br />
+                SaveApp is what you need!<br />
+                Developed using Kotlin, SaveApp lets you create expenses, budgets and subscriptions. You can also use tags to organize your movements.<br />
+                You can also visualize your statistics thanks to elegant charts.<br />
+                Find out more <a className="text-neutral-50 underline hover:font-semibold hover:text-[#ACFCD9]" href="https://saveapp.vercel.app">here</a>.
               </p>
             </div>
           </div>
