@@ -1,5 +1,6 @@
 import Footer from './footer';
 import { AnalyticsWrapper } from './analytics';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Layout({ children }) {
   return (
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
         {children}
         <Footer />
         <AnalyticsWrapper />
+        <SpeedInsights />
       </div>
     </>
   )
