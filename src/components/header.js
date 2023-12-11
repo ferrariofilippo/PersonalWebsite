@@ -12,18 +12,18 @@ export default function Header() {
             className="flex flex-wrap justify-center py-3"
           >
             <a
-              className="flex align-middle mb-3 md:mb-0 md:me-auto hover:text-[#ACFCD9]"
+              className="flex align-middle mb-3 md:mb-0 md:me-auto hover:text-purple-600"
               href="/"
             >
               <Image
-                alt="Filippo Ferrario"
+                alt="Logo"
                 src="/ferrariofilippo.png"
-                width="36"
-                height="36"
-                className="rounded-full mx-3 h-8 w-8"
+                width="40"
+                height="40"
+                className="rounded-full mx-3 h-8 w-8 my-auto"
               />
               <span
-                className="py-auto font-semibold text-2xl"
+                className="my-auto font-semibold text-xl"
               >
                 Filippo Ferrario
               </span>
@@ -35,7 +35,7 @@ export default function Header() {
                 className="nav-item"
               >
                 <Link
-                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
+                  className="p-1 px-3 flex align-middle"
                   href="/"
                 >
                   Home
@@ -45,7 +45,7 @@ export default function Header() {
                 className="nav-item"
               >
                 <Link
-                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
+                  className="p-1 px-3 flex align-middle"
                   href="/now"
                 >
                   Now
@@ -55,7 +55,7 @@ export default function Header() {
                 className="nav-item"
               >
                 <Link
-                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
+                  className="p-1 px-3 flex align-middle"
                   href="/projects"
                 >
                   Projects
@@ -65,7 +65,7 @@ export default function Header() {
                 className="nav-item"
               >
                 <Link
-                  className="p-3 align-middle hover:text-[#ACFCD9] hover:font-semibold"
+                  className="p-1 px-3 flex align-middle"
                   href="/skills"
                 >
                   Skills

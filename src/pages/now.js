@@ -5,7 +5,7 @@ import Oss from '@/components/oss';
 import Books from '@/components/books';
 import { createClient } from '@supabase/supabase-js';
 
-export default function Now({ learnings, oss, books}) {
+export default function Now({ learnings, oss, books }) {
   return (
     <>
       <Head>
@@ -28,10 +28,10 @@ export default function Now({ learnings, oss, books}) {
       >
         <Header />
         <main
-          className="flex flex-col mt-3"
+          className="flex flex-col mt-5"
         >
           <h1
-            className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+            className='text-center text-purple-600 sm:text-[3.5em] text-4xl font-semibold leading-[1em]'
           >
             What am I doing right now?
           </h1>
@@ -39,9 +39,9 @@ export default function Now({ learnings, oss, books}) {
             className='flex flex-col my-auto'
           >
             <h3
-              className="text-3xl mb-auto mt-8 text-center text-[#ACFCD9]"
+              className="text-3xl mb-auto text-center font-semibold text-purple-400"
             >
-              Let's start with Learning
+              Learning
             </h3>
             <ul
               id="learning-list"
@@ -50,7 +50,7 @@ export default function Now({ learnings, oss, books}) {
               <Learning learnings={learnings} />
             </ul>
             <h3
-              className="text-3xl mb-auto mt-8 text-center text-[#ACFCD9]"
+              className="text-3xl mb-3 mt-6 text-center font-semibold text-purple-400"
             >
               Open-Source-Software
             </h3>
@@ -61,7 +61,7 @@ export default function Now({ learnings, oss, books}) {
               <Oss oss={oss} />
             </ul>
             <h3
-            className="text-3xl mb-auto mt-8 text-center text-[#ACFCD9]"
+              className="text-3xl mb-auto mt-8 text-center font-semibold text-purple-400"
             >
               What am I reading?
             </h3>
@@ -80,9 +80,9 @@ export default function Now({ learnings, oss, books}) {
 
 export async function getServerSideProps() {
   const supabase = createClient(
-    process.env.SUPABASE_URL, 
-    process.env.SUPABASE_KEY, 
-    { 
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_KEY,
+    {
       persistSession: false
     }
   );
@@ -95,7 +95,7 @@ export async function getServerSideProps() {
 
   async function getOss() {
     const { data } = await supabase.from('oss').select();
-    
+
     return data;
   }
 

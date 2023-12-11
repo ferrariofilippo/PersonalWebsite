@@ -3,7 +3,6 @@ import Header from '../components/header';
 import Image from 'next/image';
 import Scroll from '../components/scroll';
 import ScrollToTop from '../components/scrollToTop';
-import styles from '../styles/Skills.module.css';
 
 export default function Skills() {
   return (
@@ -34,15 +33,14 @@ export default function Skills() {
           <div
             className="container my-auto sm:mx-0 mx-1"
           >
-            <h2>Everything fine, but let's come to facts...</h2>
             <h1
-              className='mt-3 text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+              className='mt-3 text-center text-purple-600 sm:text-[3.5em] text-5xl font-semibold'
             >
               What are my skills?
             </h1>
           </div>
           <a
-            className="underline text-neutral-50 hover:text-[#ACFCD9] hover:font-semibold"
+            className="underline text-neutral-50 hover:text-purple-600 hover:font-semibold"
             href="#c-sharp"
           >
             Learn more
@@ -53,7 +51,7 @@ export default function Skills() {
         className="flex flex-col"
       >
         <div
-          className={`min-h-screen flex justify-center ${styles.cSharp}`}
+          className="min-h-screen flex justify-center border-t border-neutral-700"
           id="c-sharp"
         >
           <div
@@ -80,22 +78,25 @@ export default function Skills() {
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
               >
                 C#
               </h1>
-              <p>
+              <p
+                className='mx-sm-0 mx-1'
+              >
                 Here it is, the first programming language I've learned.<br />
                 I've been using C# and .NET for three years now. I love it. It's not difficult to learn but it's
                 very powerful and adaptive: you can basically build whatever you need.<br />
-                If you check out my <a href="https://github-com/ferrariofilippo" className="custom-link">GitHub</a>, you will see that
-                almost all the projects I pushed there are developed using this language.
+                If you check out my <a href="https://github-com/ferrariofilippo" className="underline hover:font-semibold hover:text-purple-600">GitHub</a>, 
+                you will find all my C# projects.
               </p>
             </div>
           </div>
         </div>
+        <div className="divider container"></div>
         <div
-          className={`min-h-screen flex justify-center ${styles.python}`}
+          className="min-h-screen flex justify-center"
           id="python"
         >
           <div
@@ -116,23 +117,25 @@ export default function Skills() {
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
               >
                 Python
               </h1>
-              <p>
-                Is there still anyone who doesn't know Python?<br />
+              <p
+                className='mx-sm-0 mx-1'
+              >
                 I love Python because of its simplicity: it's easy to read and use.<br />
                 I use it as a prototyping language: I mean, when I need to build some complex algorithms, I
-                first build them in Python, check if they work as I expect them to and then I translate them
-                into other languages, usually C#.<br />
+                first build them in Python, check if they work as I expect them to, and then I translate them
+                into other languages, such as C#.<br />
                 I know this way I have to work twice, but when I need to get things done fast I prefer Python.
               </p>
             </div>
           </div>
         </div>
+        <div className="divider container"></div>
         <div
-          className={`min-h-screen flex justify-center ${styles.git}`}
+          className="min-h-screen flex justify-center"
           id="git"
         >
           <div
@@ -153,11 +156,13 @@ export default function Skills() {
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
               >
                 Git
               </h1>
-              <p>
+              <p
+                className='mx-sm-0 mx-1'
+              >
                 Contributing to open-source projects forced me to learn how to use Git and GitHub. If I have to
                 be honest, that was one of the best things I could have done.<br />
                 Open-source projects give you many opportunities to test yourself and get better at programming.
@@ -165,8 +170,9 @@ export default function Skills() {
             </div>
           </div>
         </div>
+        <div className="divider container"></div>
         <div
-          className={`min-h-screen flex justify-center ${styles.winUi}`}
+          className="min-h-screen flex justify-center"
           id="win-ui"
         >
           <div
@@ -193,21 +199,24 @@ export default function Skills() {
               className="md:w-1/2 w-full text-center"
             >
               <h1
-                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
               >
                 WinUI 3
               </h1>
-              <p>
+              <p
+                className='mx-sm-0 mx-1'
+              >
                 Once again, open-source helped me. I learned WinUI 3 while contributing to <a href="https://files.community.com"
-                  className="custom-link">Files</a>.<br />
+                  className="underline hover:font-semibold hover:text-purple-600">Files</a>.<br />
                 I've never started a personal project using this framework, but given it works using .NET and
-                XAML I can use it efficiently.
+                XAML I think I can use it efficiently.
               </p>
             </div>
           </div>
         </div>
+        <div className="divider container"></div>
         <div
-          className={`min-h-screen flex justify-center ${styles.android}`}
+          className="min-h-screen flex justify-center"
           id="android"
         >
           <div
@@ -228,24 +237,25 @@ export default function Skills() {
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
               >
                 Android
               </h1>
-              <p>
-                I learned Android development almost entirely by myself, thanks to online documentation and
-                obviously to StackOverflow.<br />
+              <p
+                className='mx-sm-0 mx-1'
+              >
+                I learned Android development almost entirely by myself, thanks to online documentation.<br />
                 Having the necessary knowledge to build your own mobile apps is something that has no price.<br />
-                You can develop them as you want, adding whatever you need without needing to wait for a new
-                release.<br />
-                I first started developing Android apps using Xamarin and .NET. At the moment, I am trying to
-                learn <a href="/now" className="custom-link">Kotlin</a> to have a complete experience.
+                You can develop them as you want, adding whatever feature you need.<br />
+                I first started developing Android apps using Xamarin. At the moment, I am trying to
+                learn <a href="/now" className="underline hover:font-semibold hover:text-purple-600">Kotlin</a> to access the latest APIs.
               </p>
             </div>
           </div>
         </div>
+        <div className="divider container"></div>
         <div
-          className={`min-h-screen flex justify-center ${styles.docker}`}
+          className="min-h-screen flex justify-center"
           id="docker"
         >
           <div
@@ -266,15 +276,16 @@ export default function Skills() {
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-[#ACFCD9] sm:text-[3.5em] text-5xl'
+                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
               >
                 Docker
               </h1>
-              <p>
-                I learned how to use Docker at school. Honestly, in the beginning, I hated it, because of the
+              <p
+                className='mx-sm-0 mx-1'
+              >
+                I learned how to use Docker in school. Honestly, in the beginning, I hated it, because of the
                 length of some parameter lists.<br />
-                But now that I've learnt how to use and exploit it, I think it's really useful and not that
-                difficult to use.
+                Only now, I see how useful it is.
               </p>
             </div>
           </div>

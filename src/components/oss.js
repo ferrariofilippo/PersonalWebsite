@@ -4,18 +4,14 @@ export default function Oss({ oss }) {
       className="max-w-screen px-1"
       key={`${software['id']}_${software['name']}`}
     >
-      <h4
-        className="mb-0 mt-3"
+      <a
+        className='underline hover:text-purple-600 hover:font-semibold mt-5 text-xl'
+        href={software['url']}
       >
-        <a
-          className='underline hover:text-[#ACFCD9] hover:font-semibold'
-          href={software['url']}
-        >
-          {software['name']}
-        </a>
-      </h4>
+        {software['name']}
+      </a>
       <p
-        className="mt-0 mb-4 xl:w-4/7 md:w-2/3 w-full sm:mx-auto px-4"
+        className="mb-4 xl:w-4/7 md:w-2/3 w-full sm:mx-auto px-4"
       >
         {software['content']}
       </p>

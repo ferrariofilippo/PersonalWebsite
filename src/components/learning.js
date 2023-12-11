@@ -5,7 +5,7 @@ export default function Learning({ learnings }) {
       key={`${learning['id']}_${learning['title']}`}
     >
       <h4
-        className="mb-0 mt-3"
+        className="mb-0 mt-3 text-xl"
       >
         {learning['title']}
       </h4>

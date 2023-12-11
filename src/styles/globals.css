@@ -3,39 +3,53 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #FAFAFA;
-  color: #0F766E;
+  background-color: #e5e5e5;
+  color: #9333ea;
 }
 
 ::-moz-selection {
-  background-color: #FAFAFA;
-  color: #0F766E;
+  background-color: #e5e5e5;
+  color: #9333ea;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d8b4fe;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9333ea;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7e22ce;
 }
 
 h2 {
   text-align: center;
 }
 
-p {
-  font-size: 1em;
-}
-
 main {
   min-height: 90vh;
 }
 
-.font-small {
-  font-size: 0.8em;
+.divider {
+  height: 64px;
+  width: 100%;
+  margin: auto;
+  background-repeat: repeat-x;
+  background: url('/divider.png');
 }
 
 .text {
-  color: #FAFAFA;
-  font-family: 'Tilt Neon';
-  font-size: large;
+  color: #e5e5e5;
 }
 
 .nav-item {
-  --color: #14B8A6;
+  --color: #9333ea;
   --thickness: 3px;
   --_g: #0000 25%, var(--color) 0;
   margin-left: 4px;
@@ -50,6 +64,8 @@ main {
 .nav-item:hover {
   --_i: 100%;
   transition: .3s, background-size .2s .2s;
+  color: #9333ea;
+  font-weight: 600;
 }
 
 .logo {
