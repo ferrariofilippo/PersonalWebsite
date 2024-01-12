@@ -34,7 +34,7 @@ export default function Footer() {
                 <span
                   className="text-neutral-500 my-auto text-sm-start text-center"
                 >
-                  © 2023 Filippo Ferrario
+                  © 2024 Filippo Ferrario
                 </span>
               </div>
               <div
