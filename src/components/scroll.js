@@ -3,10 +3,12 @@ import { useEffect } from 'react';
 export default function Scroll() {
   function on_scroll() {
     const scrollButton = document.getElementById('scrollToTopBtn');
-    if (document.documentElement.scrollTop > 64) {
-      scrollButton.style.display = 'block';
-    } else {
-      scrollButton.style.display = 'none';
+    if (scrollButton) {
+      if (document.documentElement.scrollTop > 64) {
+        scrollButton.style.display = 'block';
+      } else {
+        scrollButton.style.display = 'none';
+      }
     }
   }
 
