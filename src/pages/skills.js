@@ -41,7 +41,7 @@ export default function Skills() {
           </div>
           <a
             className="underline text-neutral-50 hover:text-purple-600 hover:font-semibold"
-            href="#c-sharp"
+            href="#languages"
           >
             Learn more
           </a>
@@ -52,7 +52,7 @@ export default function Skills() {
       >
         <div
           className="min-h-screen flex justify-center border-t border-neutral-700"
-          id="c-sharp"
+          id="languages"
         >
           <div
             className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
@@ -60,75 +60,47 @@ export default function Skills() {
             <div
               className="md:w-1/2 w-full flex justify-center"
             >
-              <a
-                title="Andres15alvarez, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
-                href="https://commons.wikimedia.org/wiki/File:Csharp_Logo.png"
-                className="custom-link"
-              >
-                <Image
-                  width="256"
-                  height="256"
-                  alt="Csharp Logo"
-                  src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
-                  className="object-scale-down logo"
-                />
-              </a>
+              <h1 className='text-center text-purple-600 font-semibold sm:text-[3.5em] text-5xl'>
+                Languages
+              </h1>
             </div>
             <div
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
               >
                 C#
               </h1>
               <p
-                className='mx-sm-0 mx-1'
+                className='sm:mx-0 mx-1'
               >
                 Here it is, the first programming language I've learned.<br />
-                I've been using C# and .NET for three years now. I love it. It's not difficult to learn but it's
-                very powerful and adaptive: you can basically build whatever you need.<br />
-                If you check out my <a href="https://github-com/ferrariofilippo" className="underline hover:font-semibold hover:text-purple-600">GitHub</a>, 
-                you will find all my C# projects.
+                I've been working with C# and .NET for four years now, developing desktop, mobile and web apps.
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="divider container"></div>
-        <div
-          className="min-h-screen flex justify-center"
-          id="python"
-        >
-          <div
-            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center py-5 justify-evenly"
-          >
-            <div
-              className="md:w-1/2 w-full flex justify-center"
-            >
-              <Image
-                width="256"
-                height="256"
-                alt="python"
-                src="/python-logo.svg"
-                className="object-scale-down logo"
-              />
-            </div>
-            <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
-            >
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
               >
                 Python
               </h1>
               <p
-                className='mx-sm-0 mx-1'
+                className='sm:mx-0 mx-1'
               >
                 I love Python because of its simplicity: it's easy to read and use.<br />
-                I use it as a prototyping language: I mean, when I need to build some complex algorithms, I
+                I use it as a prototyping language: when I need to build some complex algorithms, I
                 first build them in Python, check if they work as I expect them to, and then I translate them
                 into other languages, such as C#.<br />
-                I know this way I have to work twice, but when I need to get things done fast I prefer Python.
+              </p>
+              <h1
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+              >
+                Kotlin
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                I fell into this language when I decided to dive into mobile development.<br />
+                I love apps, you can find one for every need; if not, there's Kotlin to help you create it.
               </p>
             </div>
           </div>
@@ -136,35 +108,31 @@ export default function Skills() {
         <div className="divider container"></div>
         <div
           className="min-h-screen flex justify-center"
-          id="git"
+          id="devops"
         >
           <div
-            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center py-5 justify-evenly"
+            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
               className="md:w-1/2 w-full flex justify-center"
             >
-              <Image
-                width="256"
-                height="256"
-                alt="git"
-                src="/git-logo.svg"
-                className="object-scale-down logo"
-              />
+              <h1 className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl'>
+                DevOps
+              </h1>
             </div>
             <div
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
+                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
               >
-                Git
+                Git & GitHub
               </h1>
               <p
-                className='mx-sm-0 mx-1'
+                className='sm:mx-0 mx-1'
               >
-                Contributing to open-source projects forced me to learn how to use Git and GitHub. If I have to
-                be honest, that was one of the best things I could have done.<br />
+                Contributing to open-source projects forced me to learn how to use Git and GitHub.
+                If I have to be honest, that was one of the best things I could have done.<br />
                 Open-source projects give you many opportunities to test yourself and get better at programming.
               </p>
             </div>
@@ -173,90 +141,7 @@ export default function Skills() {
         <div className="divider container"></div>
         <div
           className="min-h-screen flex justify-center"
-          id="win-ui"
-        >
-          <div
-            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center justify-evenly"
-          >
-            <div
-              className="md:w-1/2 w-full flex justify-center"
-            >
-              <a
-                title="Microsoft, MIT &lt;http://opensource.org/licenses/mit-license.php&gt;, via Wikimedia Commons"
-                href="https://commons.wikimedia.org/wiki/File:Logo-winui.svg"
-                className="custom-link"
-              >
-                <Image
-                  width="256"
-                  height="256"
-                  alt="Logo-winui"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo-winui.svg/256px-Logo-winui.svg.png"
-                  className="logo object-scale-down"
-                />
-              </a>
-            </div>
-            <div
-              className="md:w-1/2 w-full text-center"
-            >
-              <h1
-                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
-              >
-                WinUI 3
-              </h1>
-              <p
-                className='mx-sm-0 mx-1'
-              >
-                Once again, open-source helped me. I learned WinUI 3 while contributing to <a href="https://files.community.com"
-                  className="underline hover:font-semibold hover:text-purple-600">Files</a>.<br />
-                I've never started a personal project using this framework, but given it works using .NET and
-                XAML I think I can use it efficiently.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="divider container"></div>
-        <div
-          className="min-h-screen flex justify-center"
-          id="android"
-        >
-          <div
-            className="sm:mx-auto mx-1 container flex md:flex-row flex-col items-center py-5 justify-evenly"
-          >
-            <div
-              className="md:w-1/2 w-full flex justify-center"
-            >
-              <Image
-                width="256"
-                height="256"
-                alt="android"
-                src="/android-logo.svg"
-                className="object-scale-down logo"
-              />
-            </div>
-            <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
-            >
-              <h1
-                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
-              >
-                Android
-              </h1>
-              <p
-                className='mx-sm-0 mx-1'
-              >
-                I learned Android development almost entirely by myself, thanks to online documentation.<br />
-                Having the necessary knowledge to build your own mobile apps is something that has no price.<br />
-                You can develop them as you want, adding whatever feature you need.<br />
-                I first started developing Android apps using Xamarin. At the moment, I am trying to
-                learn <a href="/now" className="underline hover:font-semibold hover:text-purple-600">Kotlin</a> to access the latest APIs.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="divider container"></div>
-        <div
-          className="min-h-screen flex justify-center"
-          id="docker"
+          id="database"
         >
           <div
             className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
@@ -264,28 +149,174 @@ export default function Skills() {
             <div
               className="md:w-1/2 w-full flex justify-center"
             >
-              <Image
-                width="256"
-                height="256"
-                alt="docker"
-                src="/docker-logo.png"
-                className="object-scale-down"
-              />
+              <h1 className='text-center text-purple-600 font-semibold sm:text-[3.5em] text-5xl'>
+                Database
+              </h1>
             </div>
             <div
               className="md:w-1/2 w-full text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl mb-5 mx-sm-0 mx-1'
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
               >
-                Docker
+                MySQL
               </h1>
               <p
-                className='mx-sm-0 mx-1'
+                className='sm:mx-0 mx-1'
               >
-                I learned how to use Docker in school. Honestly, in the beginning, I hated it, because of the
-                length of some parameter lists.<br />
-                Only now, I see how useful it is.
+                I can write queries, but I'm not much into optimization.<br />
+                I have a shallow knowledge of administration.
+              </p>
+              <h1
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+              >
+                PostgreSQL
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                This website runs thanks to PostgreSQL. I needed a relational db and Supabase offered it, that's it.<br />
+                I struggled a it with the policies, but after some time I learned how to use them.
+              </p>
+              <h1
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+              >
+                MongoDB
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                I love it. Sometimes you need to store complex data, but mapping it to a relational db it's not worth the time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="divider container"></div>
+        <div
+          className="min-h-screen flex justify-center"
+          id="mobile"
+        >
+          <div
+            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+          >
+            <div
+              className="md:w-1/2 w-full flex justify-center"
+            >
+              <h1 className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl'>
+                Mobile development
+              </h1>
+            </div>
+            <div
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+            >
+              <h1
+                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+              >
+                Xamarin
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                It has been my way into mobile development, but I'm not currently using it.
+                It was very helpful since it made me learn XAML and some basic things, such as event-based programming.
+              </p>
+              <h1
+                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 mt-12 sm:mx-0 mx-1'
+              >
+                Android
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                I learned Android development almost entirely by myself, thanks to online documentation.<br />
+                Having the necessary knowledge to build your own mobile apps is something that has no price.<br />
+                You can develop them as you want, adding whatever feature you need.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="divider container"></div>
+        <div
+          className="min-h-screen flex justify-center"
+          id="desktop"
+        >
+          <div
+            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+          >
+            <div
+              className="md:w-1/2 w-full flex justify-center"
+            >
+              <h1 className='text-center text-purple-600 font-semibold sm:text-[3.5em] text-5xl'>
+                Desktop development
+              </h1>
+            </div>
+            <div
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+            >
+              <h1
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+              >
+                WinUI 3
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                Once again, open-source helped me. I learned WinUI 3 while contributing to <a href="https://files.community.com"
+                  className="underline hover:font-semibold hover:text-purple-600">Files</a>.<br />
+                I've never started a personal project using this framework, but given it works using .NET and
+                XAML I think I can use it effectively.
+              </p>
+              <h1
+                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+              >
+                WinForms
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                Simple yet powerful. I used it to develop an application during a two-week school training.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="divider container"></div>
+        <div
+          className="min-h-screen flex justify-center"
+          id="web"
+        >
+          <div
+            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+          >
+            <div
+              className="md:w-1/2 w-full flex justify-center"
+            >
+              <h1 className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl'>
+                Web development
+              </h1>
+            </div>
+            <div
+              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+            >
+              <h1
+                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+              >
+                ASP.NET
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                I have used it for many school projects.<br />
+                Once you learn how to use C# and Visual Studio, you can be super productive and build websites in a few hours.
+              </p>
+              <h1
+                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+              >
+                Next.js & Nuxt.js
+              </h1>
+              <p
+                className='sm:mx-0 mx-1'
+              >
+                I like both, they're my way-to-go when I need to create a website.
               </p>
             </div>
           </div>

@@ -52,18 +52,19 @@ export default function Home() {
             >
               About me
             </h3>
-            <p>
-              I'm a student and an open-source contributor.<br />
+            <p className='ps-3 mb-3'>
+              I'm a student, a developer and an open-source contributor.<br />
               I study Mathematical Engineering at <a href="https://www.polimi.it/" className="hover:text-purple-600 hover:font-semibold underline">Politecnico di Milano</a>.<br />
             </p>
-            <p className='my-3'>
-              I love Maths and Computer Science - they're about the same things: solving problems, optimizing processes and finding creative ways to achieve your goals.
+            <span className='font-semibold mt-3'>What I love:</span>
+            <p className='mb-3 ps-3'>
+              diving into challenges, solving problems, over-engineering things & C#.
             </p>
-            <p>
-              I first approached programming four years ago using Arduino. I immediately loved it: it's hard to describe the joy of seeing that what you've been creating for so long actually works!<br />
-            </p>
-            <p className='mt-3'>
-              At the moment, I'm using mostly C#, Kotlin and JS.
+            <span className='font-semibold'>My journey into programming:</span>
+            <p className='ps-3'>
+              I first approached this <span className='italic'>art</span> in 2019 using Arduino to create simple devices.
+              Since then, I kept on developing more and more software, to improve so that I can solve a wider range of problems - yeah, it's kind of a vicious cycle.<br />
+              By 2022, I publish my projects so that people can help me find bugs and add features or be inspired by them.
             </p>
           </div>
         </main>

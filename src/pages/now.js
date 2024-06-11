@@ -31,7 +31,7 @@ export default function Now({ learnings, oss, books }) {
           className="flex flex-col mt-5"
         >
           <h1
-            className='text-center text-purple-600 sm:text-[3.5em] text-4xl font-semibold leading-[1em]'
+            className='text-center text-purple-600 sm:text-[3.5em] text-4xl font-semibold leading-[1em] mt-11'
           >
             What am I doing right now?
           </h1>
@@ -63,7 +63,7 @@ export default function Now({ learnings, oss, books }) {
             <h3
               className="text-3xl mb-auto mt-8 text-center font-semibold text-purple-400"
             >
-              What am I reading?
+              Reading
             </h3>
             <ul
               id="reading-list"
