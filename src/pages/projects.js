@@ -63,7 +63,7 @@ export default function Projects() {
               <Image
                 width="256"
                 height="256"
-                alt="SaveApp Logo"
+                alt="SaveApp's Logo"
                 src="/saveapp_logo.png"
                 className="object-scale-down rounded-full max-w-[128px] sm:max-w-[192px] shadow-lg shadow-purple-600/60"
                 quality='100'
@@ -102,20 +102,17 @@ export default function Projects() {
             className="container sm:mx-auto mx-2 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="md:w-1/2 w-full flex flex-col items-center rounded-full py-12 px-2 mx-4 shadow-md shadow-purple-600/60"
+              className="md:w-1/2 w-full flex flex-col items-center"
             >
-              <span>
-                Logo
-              </span>
-              <span
-                className="text-[2.5em] font-semibold text-center"
-              >
-                Work In Progress
-              </span>
-              <span
-                className="text-center">
-                (actually not)
-              </span>
+              <Image
+                width="256"
+                height="256"
+                alt="NetKit's Logo"
+                src="/netkit_logo.png"
+                className="object-scale-down rounded-full max-w-[128px] sm:max-w-[192px] shadow-lg shadow-purple-600/60"
+                quality='100'
+                priority
+              />
             </div>
             <div
               className="md:w-1/2 w-full text-center md:mt-0 mt-2 mx-4"
@@ -128,7 +125,7 @@ export default function Projects() {
               <p>
                 Having trouble with routine networking stuff? NetKit is here to help you!<br />
                 This simple Android application is built to help you with subnetting, IPv6 and ACLs.<br />
-                See <a className="text-neutral-50 underline hover:font-semibold hover:text-purple-600" href="https://github.com/ferrariofilippo/NetKit">GitHub</a> repository to learn more.
+                See <a className="text-neutral-50 underline hover:font-semibold hover:text-purple-600" href="https://github.com/ferrariofilippo/NetKit_KT">GitHub</a> repository to learn more.
               </p>
             </div>
           </div>
