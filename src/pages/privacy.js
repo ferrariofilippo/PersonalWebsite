@@ -39,7 +39,8 @@ export default function Privacy() {
           <p
             className="text-center lg:w-2/3 w-full px-2 text-lg"
           >
-            <em>ferrariofilippo.vercel.app</em> uses <a href="https://vercel.com/analytics" className="text-neutral-300 underline hover:text-purple-600 hover:font-semibold">Vercel Analytics</a> to collect anonymous data about its users, such as which pages they visit and how much time they spend on them.<br />
+            <em>ferrariofilippo.vercel.app</em> uses <a href="https://vercel.com/analytics" className="text-neutral-300 underline hover:text-purple-600 hover:font-semibold">Vercel Analytics</a> to collect anonymous data about its users, 
+            such as which pages they visit and how much time they spend on them (analytical cookies).<br />
             This data is <span className='font-semibold'>exclusively used by me</span> to better understand what I should improve.
           </p>
         </main>

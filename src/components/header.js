@@ -2,9 +2,54 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
+  function onHeaderLoad() {
+    const bannerHidden = sessionStorage.getItem('cookiesBannerHidden');
+    if (bannerHidden === null || bannerHidden == false) {
+      const banner = document.getElementById('cookieBanner');
+      banner.classList.remove('hidden');
+    }
+  }
+
+  function closeCookieBanner() {
+    console.log('clicked')
+    const banner = document.getElementById('cookieBanner');
+    banner.classList.add('hidden');
+    sessionStorage.setItem('cookiesBannerHidden', true);
+  }
+
   return (
     <>
-      <header>
+      <header onLoad={onHeaderLoad}>
+        <div
+          id="cookieBanner"
+          className="hidden flex dark:bg-neutral-800 border-b-2 border-neutral-600 text-sm justify-between text mx-1"
+        >
+          <span className="my-auto">
+            This website uses analytical cookies.
+            <a
+              id="go_to_privacy"
+              aria-label="See cookie policy"
+              href="/privacy"
+              className="hover:text-purple-600 my-auto p-1 "
+            >
+              See Policy
+            </a>
+          </span>
+          <button
+            id="close_cookie_button"
+            aria-label="Close banner"
+            type="button"
+            onClick={closeCookieBanner}
+            className="hover:text-secondary my-auto p-1"
+          >
+            <span
+              className="material-symbols-outlined align-middle hover:text-purple-600"
+              id="closeBanner"
+            >
+              close
+            </span>
+          </button>
+        </div>
         <div
           className="container mx-auto"
         >
