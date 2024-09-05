@@ -24,50 +24,54 @@ export default function Now({ learnings, oss, books }) {
         />
       </Head>
       <div
-        className="min-h-screen container sm:mx-auto mb-8"
+        className="min-h-screen xl:mx-32 lg:mx-24 md:mx-16 sm:mx-8 mx-1 mb-8"
       >
         <Header />
         <main
           className="flex flex-col mt-5"
         >
           <h1
-            className='text-center text-purple-600 sm:text-[3.5em] text-4xl font-semibold leading-[1em] mt-11'
+            className='mt-3 text-center text-purple-600 sm:text-[6em] sm:uppercase text-6xl font-semibold mb-8'
           >
-            What am I doing right now?
+            Things I'm doing:
           </h1>
           <div
-            className='flex flex-col my-auto'
+            className='flex flex-col my-auto sm:mx-0 mx-2'
           >
             <h3
-              className="text-3xl mb-auto text-center font-semibold text-purple-400"
+              className="text-4xl mb-auto sm:me-auto font-semibold text-purple-400"
             >
               Learning
             </h3>
             <ul
               id="learning-list"
-              className="list-none text-center sm:mx-0 mx-1"
+              className="list-disc list-inside sm:me-auto sm:mx-0 mx-1"
             >
               <Learning learnings={learnings} />
             </ul>
-            <h3
-              className="text-3xl mb-3 mt-6 text-center font-semibold text-purple-400"
+            <div
+              className='sm:ms-auto'
             >
-              Open-Source-Software
-            </h3>
-            <ul
-              id="oss-list"
-              className="list-none text-center sm:mx-0 mx-1"
-            >
-              <Oss oss={oss} />
-            </ul>
+              <h3
+                className="text-4xl mt-6 font-semibold text-purple-400"
+              >
+                Open-Source-Software
+              </h3>
+              <ul
+                id="oss-list"
+                className="list-disc list-inside mx-1"
+              >
+                <Oss oss={oss} />
+              </ul>
+            </div>
             <h3
-              className="text-3xl mb-auto mt-8 text-center font-semibold text-purple-400"
+              className="sm:mx-auto text-4xl mt-6 font-semibold text-purple-400"
             >
               Reading
             </h3>
             <ul
               id="reading-list"
-              className="list-none text-center sm:mx-0 mx-1"
+              className="sm:mx-auto list-disc list-inside sm:mx-0 mx-1"
             >
               <Books books={books} />
             </ul>

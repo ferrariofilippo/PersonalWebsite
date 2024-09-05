@@ -1,10 +1,14 @@
 import Head from 'next/head';
 import Header from '../components/header';
-import Image from 'next/image';
 import Scroll from '../components/scroll';
 import ScrollToTop from '../components/scrollToTop';
 
 export default function Skills() {
+  function scrollToFirst(e) {
+    e.preventDefault();
+    document.getElementById('languages').scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <>
       <Head>
@@ -24,7 +28,7 @@ export default function Skills() {
       </Head>
       <ScrollToTop />
       <div
-        className="min-h-screen container mx-auto sm:mb-0 mb-5"
+        className="min-h-screen mx-auto sm:mb-0 mb-5"
       >
         <Header />
         <main
@@ -34,14 +38,15 @@ export default function Skills() {
             className="container my-auto sm:mx-0 mx-1"
           >
             <h1
-              className='mt-3 text-center text-purple-600 sm:text-[3.5em] text-5xl font-semibold'
+              className='mt-3 text-center text-purple-600 sm:text-[7em] text-7xl font-semibold'
             >
-              What are my skills?
+              WHAT CAN I DO?
             </h1>
           </div>
           <a
             className="underline text-neutral-50 hover:text-purple-600 hover:font-semibold"
             href="#languages"
+            onClick={scrollToFirst}
           >
             Learn more
           </a>
@@ -55,36 +60,36 @@ export default function Skills() {
           id="languages"
         >
           <div
-            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+            className="2xl:mx-32 md:mx-16 sm:mx-4 mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="md:w-1/2 w-full flex justify-center"
+              className="lg:w-1/2 md:w-3/7 w-full flex justify-center"
             >
-              <h1 className='text-center text-purple-600 font-semibold sm:text-[3.5em] text-5xl'>
+              <h1 className='lg:uppercase lg:leading-[5rem] text-center text-purple-600 font-semibold 2xl:text-[5em] lg:text-[3.5em] text-4xl'>
                 Languages
               </h1>
             </div>
             <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+              className="lg:w-1/2 md:w-3/7 w-full xl:ps-12 md:ps-8 lg:text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 C#
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 Here it is, the first programming language I've learned.<br />
                 I've been working with C# and .NET for four years now, developing desktop, mobile and web apps.
               </p>
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl mt-12 sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 Python
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 I love Python because of its simplicity: it's easy to read and use.<br />
                 I use it as a prototyping language: when I need to build some complex algorithms, I
@@ -92,12 +97,12 @@ export default function Skills() {
                 into other languages, such as C#.<br />
               </p>
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl mt-12 sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 Kotlin
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 I fell into this language when I decided to dive into mobile development.<br />
                 I love apps, you can find one for every need; if not, there's Kotlin to help you create it.
@@ -105,31 +110,31 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="divider container"></div>
+        <div className="divider"></div>
         <div
           className="min-h-screen flex justify-center"
           id="devops"
         >
           <div
-            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+            className="2xl:mx-32 md:mx-16 sm:mx-4 mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="md:w-1/2 w-full flex justify-center"
+              className="lg:w-1/2 md:w-3/7 w-full flex justify-center"
             >
-              <h1 className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl'>
+              <h1 className='lg:uppercase lg:leading-[5rem] text-center text-purple-400 font-semibold 2xl:text-[5em] lg:text-[3.5em] text-4xl'>
                 DevOps
               </h1>
             </div>
             <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+              className="lg:w-1/2 md:w-3/7 w-full xl:ps-12 md:ps-8 lg:text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-600 font-semibold sm:text-[2.5em] text-3xl sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 Git & GitHub
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 Contributing to open-source projects forced me to learn how to use Git and GitHub.
                 If I have to be honest, that was one of the best things I could have done.<br />
@@ -138,95 +143,95 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="divider container"></div>
+        <div className="divider"></div>
         <div
           className="min-h-screen flex justify-center"
           id="database"
         >
           <div
-            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+            className="2xl:mx-32 md:mx-16 sm:mx-4 mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="md:w-1/2 w-full flex justify-center"
+              className="lg:w-1/2 md:w-3/7 w-full flex justify-center"
             >
-              <h1 className='text-center text-purple-600 font-semibold sm:text-[3.5em] text-5xl'>
+              <h1 className='lg:uppercase lg:leading-[5rem] text-center text-purple-600 font-semibold 2xl:text-[5em] lg:text-[3.5em] text-4xl'>
                 Database
               </h1>
             </div>
             <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+              className="lg:w-1/2 md:w-3/7 w-full xl:ps-12 md:ps-8 lg:text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 MySQL
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 I can write queries, but I'm not much into optimization.<br />
                 I have a shallow knowledge of administration.
               </p>
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl mt-12 sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 PostgreSQL
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 This website runs thanks to PostgreSQL. I needed a relational db and Supabase offered it, that's it.<br />
                 I struggled a it with the policies, but after some time I learned how to use them.
               </p>
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl mt-12 sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 MongoDB
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 I love it. Sometimes you need to store complex data, but mapping it to a relational db it's not worth the time.
               </p>
             </div>
           </div>
         </div>
-        <div className="divider container"></div>
+        <div className="divider"></div>
         <div
           className="min-h-screen flex justify-center"
           id="mobile"
         >
           <div
-            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+            className="2xl:mx-32 md:mx-16 sm:mx-4 mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="md:w-1/2 w-full flex justify-center"
+              className="lg:w-1/2 md:w-3/7 w-full flex justify-center"
             >
-              <h1 className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl'>
+              <h1 className='lg:uppercase lg:leading-[5rem] text-center text-purple-400 font-semibold 2xl:text-[5em] lg:text-[3.5em] text-4xl'>
                 Mobile development
               </h1>
             </div>
             <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+              className="lg:w-1/2 md:w-3/7 w-full xl:ps-12 md:ps-8 lg:text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-600 font-semibold sm:text-[2.5em] text-3xl sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 Xamarin
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 It has been my way into mobile development, but I'm not currently using it.
                 It was very helpful since it made me learn XAML and some basic things, such as event-based programming.
               </p>
               <h1
-                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 mt-12 sm:mx-0 mx-1'
+                className='md:text-center text-purple-600 font-semibold sm:text-[2.5em] text-3xl mt-12 sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 Android
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+               className='md:mx-0 sm:mx-4 mx-1'
               >
                 I learned Android development almost entirely by myself, thanks to online documentation.<br />
                 Having the necessary knowledge to build your own mobile apps is something that has no price.<br />
@@ -235,31 +240,31 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="divider container"></div>
+        <div className="divider"></div>
         <div
           className="min-h-screen flex justify-center"
           id="desktop"
         >
           <div
-            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+            className="2xl:mx-32 md:mx-16 sm:mx-4 mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="md:w-1/2 w-full flex justify-center"
+              className="lg:w-1/2 md:w-3/7 w-full flex justify-center"
             >
-              <h1 className='text-center text-purple-600 font-semibold sm:text-[3.5em] text-5xl'>
+              <h1 className='lg:uppercase lg:leading-[5rem] text-center text-purple-600 font-semibold 2xl:text-[5em] lg:text-[3.5em] text-4xl'>
                 Desktop development
               </h1>
             </div>
             <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+              className="lg:w-1/2 md:w-3/7 w-full xl:ps-12 md:ps-8 lg:text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 WinUI 3
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 Once again, open-source helped me. I learned WinUI 3 while contributing to <a href="https://files.community.com"
                   className="underline hover:font-semibold hover:text-purple-600">Files</a>.<br />
@@ -267,54 +272,54 @@ export default function Skills() {
                 XAML I think I can use it effectively.
               </p>
               <h1
-                className='text-center text-purple-400 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-400 font-semibold sm:text-[2.5em] text-3xl mt-12 sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 WinForms
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 Simple yet powerful. I used it to develop an application during a two-week school training.
               </p>
             </div>
           </div>
         </div>
-        <div className="divider container"></div>
+        <div className="divider"></div>
         <div
           className="min-h-screen flex justify-center"
           id="web"
         >
           <div
-            className="container sm:mx-auto mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
+            className="2xl:mx-32 md:mx-16 sm:mx-4 mx-1 flex md:flex-row flex-col items-center py-5 justify-evenly"
           >
             <div
-              className="md:w-1/2 w-full flex justify-center"
+              className="lg:w-1/2 md:w-3/7 w-full flex justify-center"
             >
-              <h1 className='text-center text-purple-400 font-semibold sm:text-[3.5em] text-5xl'>
+              <h1 className='lg:uppercase lg:leading-[5rem] text-center text-purple-400 font-semibold 2xl:text-[5em] lg:text-[3.5em] text-4xl'>
                 Web development
               </h1>
             </div>
             <div
-              className="md:w-1/2 w-full text-center md:mt-0 mt-2"
+              className="lg:w-1/2 md:w-3/7 w-full xl:ps-12 md:ps-8 lg:text-center md:mt-0 mt-2"
             >
               <h1
-                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-600 font-semibold sm:text-[2.5em] text-3xl sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 ASP.NET
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 I have used it for many school projects.<br />
                 Once you learn how to use C# and Visual Studio, you can be super productive and build websites in a few hours.
               </p>
               <h1
-                className='text-center text-purple-600 font-semibold sm:text-[2.5em] text-xl mt-12 mb-5 sm:mx-0 mx-1'
+                className='md:text-center text-purple-600 font-semibold sm:text-[2.5em] text-3xl mt-12 sm:mb-5 mb-1 md:mx-0 sm:mx-4 mx-1'
               >
                 Next.js & Nuxt.js
               </h1>
               <p
-                className='sm:mx-0 mx-1'
+                className='md:mx-0 sm:mx-4 mx-1'
               >
                 I like both, they're my way-to-go when I need to create a website.
               </p>

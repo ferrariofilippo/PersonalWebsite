@@ -7,7 +7,7 @@ export default function Footer() {
         className="mt-auto border-t border-neutral-900"
       >
         <div
-          className="container mx-auto"
+          className="sm:mx-4 mx-1"
         >
           <div
             className="flex flex-wrap justify-between align-center py-3 mt-1"
@@ -28,11 +28,11 @@ export default function Footer() {
                     height="32"
                     width="32"
                     quality="50"
-                    className="rounded-full mx-3"
+                    className="rounded-full mx-3 md:h-6 md:w-6"
                   />
                 </a>
                 <span
-                  className="text-neutral-500 my-auto text-sm-start text-center"
+                  className="md:text-sm md:uppercase text-neutral-500 my-auto text-sm-start text-center"
                 >
                   © 2024 Filippo Ferrario
                 </span>
@@ -41,18 +41,18 @@ export default function Footer() {
                 className="mx-3 mt-1 flex flex-row sm:justify-start justify-center"
               >
                 <a
-                  className="text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
+                  className="md:uppercase md:text-xs text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
                   href="https://github.com/ferrariofilippo/PersonalWebsite"
                 >
                   Code
                 </a>
                 <span
-                  className="mx-2 text-neutral-200"
+                  className="md:uppercase md:text-xs mx-2 text-neutral-200"
                 >
                   |
                 </span>
                 <a
-                  className="text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
+                  className="md:uppercase md:text-xs text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
                   href="/privacy"
                 >
                   Privacy
@@ -69,7 +69,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://github.com/ferrariofilippo"
-                    className="font-semibold text-purple-400 hover:text-purple-600"
+                    className="md:text-sm font-semibold text-purple-400 hover:text-purple-600"
                   >
                     GH
                   </a>
@@ -77,7 +77,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/ferrariofilippo"
-                    className="hover:text-purple-600 hover:font-semibold no-underline mx-3"
+                    className="md:text-sm hover:text-purple-600 hover:font-semibold no-underline mx-3"
                   >
                     IN
                   </a>
@@ -85,7 +85,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://stackoverflow.com/users/19737867/filippo-ferrario"
-                    className="hover:text-purple-600 hover:font-semibold no-underline"
+                    className="md:text-sm hover:text-purple-600 hover:font-semibold no-underline"
                   >
                     SO
                   </a>
@@ -93,31 +93,22 @@ export default function Footer() {
                 <li>
                   <a
                     href="mailto:ferrario.filippo.dev@gmail.com"
-                    className="hover:text-purple-600 hover:font-semibold no-underline mx-3"
+                    className="md:text-sm hover:text-purple-600 hover:font-semibold no-underline mx-3"
                   >
                     EM
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://x.com/fferrario4"
-                    className="hover:text-purple-600 hover:font-semibold no-underline me-3"
-                  >
-                    X
-                  </a>
-                </li>
               </ul>
-
               <div
                 className="flex flex-col sm:text-end text-center mx-3"
               >
                 <span
-                  className="mt-3 mb-0 text-sm text-neutral-500"
+                  className="md:uppercase md:text-xs mt-3 mb-0 text-sm text-neutral-500"
                 >
                   Credits
                 </span>
                 <a
-                  className="text-sm text-purple-400 my-auto hover:text-purple-600 hover:font-semibold"
+                  className="md:uppercase md:text-xs text-sm text-purple-400 my-auto hover:text-purple-600 hover:font-semibold"
                   href="https://vercel.com/"
                 >
                   Powered by Vercel
@@ -126,18 +117,18 @@ export default function Footer() {
                   className="flex flex-row sm:justify-end justify-center"
                 >
                   <a
-                    className="text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
+                    className="md:uppercase md:text-xs text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
                     href="https://tailwindcss.com"
                   >
                     Tailwind
                   </a>
                   <span
-                    className="text-neutral-200 text-sm mx-2"
+                    className="md:uppercase md:text-xs text-neutral-200 text-sm mx-2"
                   >
                     |
                   </span>
                   <a
-                    className="text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
+                    className="md:uppercase md:text-xs text-sm text-neutral-200 my-auto hover:text-purple-600 hover:font-semibold"
                     href="https://fonts.google.com/"
                   >
                     Google Fonts

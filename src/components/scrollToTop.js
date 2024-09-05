@@ -1,7 +1,6 @@
 export default function ScrollToTop() {
   function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    document.getElementById('header-title').scrollIntoView({ behavior: "smooth" });
   }
 
   return (

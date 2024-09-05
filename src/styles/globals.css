@@ -48,29 +48,27 @@ main {
   color: #e5e5e5;
 }
 
-.nav-item {
-  --color: #9333ea;
-  --thickness: 3px;
-  --_g: #0000 25%, var(--color) 0;
-  margin-left: 4px;
-  padding: var(--thickness);
-  background:
-      conic-gradient(from 180deg at top var(--thickness) right var(--thickness), var(--_g)) var(--_i, 200%) 0 / 200% var(--_i, var(--thickness)) no-repeat,
-      conic-gradient(at bottom var(--thickness) left var(--thickness), var(--_g)) 0 var(--_i, 200%) / var(--_i, var(--thickness)) 200% no-repeat;
-  transition: .2s, background-position .2s .2s;
-  cursor: pointer;
-}
-
-.nav-item:hover {
-  --_i: 100%;
-  transition: .3s, background-size .2s .2s;
-  color: #9333ea;
-  font-weight: 600;
-}
-
 .logo {
   min-width: 256px;
   max-width: 512px;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #f6edfe;
+  text-shadow:
+    0 0 1px #f6edfe,
+    0 0 2px #f6edfe,
+    0 0 6px #9333ea,
+    0 0 10px #9333ea,
+    0 0 12px #9333ea,
+    0 0 11px #9333ea,
+    0 0 15px #9333ea;
+}
+
+.nav-link:hover .plus-sign {
+  transition: rotate 0.1s;
+  rotate: -45deg;
 }
 
 @media screen and (max-width: 768px) {

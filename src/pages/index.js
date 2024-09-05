@@ -25,14 +25,14 @@ export default function Home() {
         />
       </Head>
       <div
-        className="min-h-screen container mx-auto md:mb-0 mb-8"
+        className="min-h-screen"
       >
         <Header />
         <main
-          className="flex md:flex-row flex-col align-middle"
+          className="flex lg:flex-row flex-col align-middle xl:mx-32 md:mx-16 sm:mx-8 mx-2"
         >
           <div
-            className="flex flex-col justify-center lg:w-1/2 md:w-1/3 w-full mt-sm-0 mt-3 px-sm-0 px-3"
+            className="flex flex-col justify-center lg:w-1/2 w-full sm:my-auto mt-8 mb-12"
           >
             <Image
               width="256"
@@ -45,12 +45,12 @@ export default function Home() {
             />
           </div>
           <div
-            className="lg:w-1/2 md:w-2/3 w-full md:my-auto mt-8 px-4"
+            className="2xl:w-1/3 xl:w-1/2 lg:w-2/3 w-full mt-auto sm:mb-4 mb-1"
           >
             <h3
-              className='md:text-start text-center text-2xl font-semibold text-purple-600'
+              className='md:text-start text-center text-6xl font-semibold text-purple-600'
             >
-              About me
+              ABOUT ME
             </h3>
             <p className='ps-3 mb-3'>
               I'm a student, a developer and an open-source contributor.<br />

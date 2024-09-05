@@ -22,7 +22,7 @@ export default function Header() {
       <header onLoad={onHeaderLoad}>
         <div
           id="cookieBanner"
-          className="hidden flex dark:bg-neutral-800 border-b-2 border-neutral-600 text-sm justify-between text mx-1"
+          className="hidden flex dark:bg-neutral-800 border-b-2 border-neutral-600 text-sm justify-between text sm:px-2 px-1"
         >
           <span className="my-auto">
             This website uses analytical cookies.
@@ -51,88 +51,63 @@ export default function Header() {
           </button>
         </div>
         <div
-          className="container mx-auto"
+          className="mx-1 flex flex-col items-center py-3 gap-y-2"
+          id="header-title"
         >
-          <div
-            className="flex flex-wrap justify-center py-3"
+          <a
+            className="link font-semibold text-xl text-center"
+            href="/"
           >
-            <a
-              className="flex align-middle mb-3 md:mb-0 md:me-auto hover:text-purple-600"
-              href="/"
+            FILIPPO FERRARIO
+          </a>
+          <ul
+            className="flex gap-x-2 gap-y-3 justify-evenly flex-wrap"
+          >
+            <li
+              className="border border-neutral-500 rounded-2xl hover:text-purple-600 hover:border-purple-600 hover:font-semibold nav-link"
             >
-              <Image
-                alt="Logo"
-                src="/ferrariofilippo.png"
-                width="40"
-                height="40"
-                className="rounded-full mx-3 h-8 w-8 my-auto"
-              />
-              <span
-                className="my-auto font-semibold text-xl"
+              <Link
+                className="p-1 px-3 flex align-middle"
+                href="/"
               >
-                Filippo Ferrario
-              </span>
-            </a>
-            <ul
-              className="flex gap-x-1 justify-evenly flex-wrap"
+                <span className="me-2 py-0 -mt-[0.05rem] plus-sign">+</span>
+                Home
+              </Link>
+            </li>
+            <li
+              className="border border-neutral-500 rounded-2xl hover:text-purple-600 hover:border-purple-600 hover:font-semibold nav-link"
             >
-              <li
-                className="nav-item"
+              <Link
+                className="p-1 px-3 flex align-middle"
+                href="/now"
               >
-                <Link
-                  className="p-1 px-3 flex align-middle"
-                  href="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li
-                className="nav-item"
+                <span className="me-2 py-0 -mt-[0.05rem] plus-sign">+</span>
+                Now
+              </Link>
+            </li>
+            <li
+              className="border border-neutral-500 rounded-2xl hover:text-purple-600 hover:border-purple-600 hover:font-semibold nav-link"
+            >
+              <Link
+                className="p-1 px-3 flex align-middle"
+                href="/projects"
               >
-                <Link
-                  className="p-1 px-3 flex align-middle"
-                  href="/now"
-                >
-                  Now
-                </Link>
-              </li>
-              <li
-                className="nav-item"
+                <span className="me-2 py-0 -mt-[0.05rem] plus-sign">+</span>
+                Projects
+              </Link>
+            </li>
+            <li
+              className="border border-neutral-500 rounded-2xl hover:text-purple-600 hover:border-purple-600 hover:font-semibold nav-link"
+            >
+              <Link
+                className="p-1 px-3 flex align-middle"
+                href="/skills"
               >
-                <Link
-                  className="p-1 px-3 flex align-middle"
-                  href="/projects"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li
-                className="nav-item"
-              >
-                <Link
-                  className="p-1 px-3 flex align-middle"
-                  href="/skills"
-                >
-                  Skills
-                </Link>
-              </li>
-              <li
-                className="m-1"
-              >
-                <a
-                  title="Government of Ukraine, Public domain, via Wikimedia Commons"
-                  href="https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg"
-                >
-                  <Image
-                    width="48"
-                    height="32"
-                    alt="Flag of Ukraine"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/512px-Flag_of_Ukraine.svg.png"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+                <span className="me-2 py-0 -mt-[0.05rem] plus-sign">+</span>
+                Skills
+              </Link>
+            </li>
+          </ul>
         </div>
       </header>
     </>
