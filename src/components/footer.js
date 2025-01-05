@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <>
       <footer
@@ -34,7 +35,7 @@ export default function Footer() {
                 <span
                   className="md:text-sm md:uppercase text-neutral-500 my-auto text-sm-start text-center"
                 >
-                  © 2024 Filippo Ferrario
+                  © {year} Filippo Ferrario
                 </span>
               </div>
               <div
