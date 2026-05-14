@@ -2,9 +2,10 @@ export default function Books({ books }) {
   return books?.map((book) => (
     <li
       key={`${book['id']}_${book['title']}`}
-      className="max-w-screen px-1 mb-0 mt-1"
+      className="text-zinc-300 leading-relaxed"
     >
-      {book['title']}, {book['author']}
+      <span className="font-medium text-zinc-100">{book['title']}</span>
+      <span className="font-mono text-xs text-zinc-500 ml-2">— {book['author']}</span>
     </li>
   ));
 }

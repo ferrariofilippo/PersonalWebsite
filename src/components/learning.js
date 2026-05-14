@@ -1,7 +1,7 @@
 export default function Learning({ learnings }) {
   return learnings?.map((learning) => (
     <li
-      className="max-w-screen px-1 mb-0 mt-1"
+      className="text-zinc-300 leading-relaxed"
       key={`${learning['id']}_${learning['title']}`}
     >
       {learning['title']}

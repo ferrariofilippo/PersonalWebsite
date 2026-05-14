@@ -4,20 +4,16 @@ export default function ScrollToTop() {
   }
 
   return (
-    <>
-      <button
-        className="p-0 hidden fixed left-4 bottom-4 z-[101] h-12 w-12 rounded-full bg-purple-300"
-        id="scrollToTopBtn"
-        onClick={scrollToTop}
-        name="scrolltotopbutton"
-      >
-        <span
-          className="material-symbols-outlined text-[2em] font-black align-middle text-purple-600"
-          id="upArrow"
-        >
-          arrow_upward
-        </span>
-      </button>
-    </>
+    <button
+      className="hidden fixed left-4 bottom-4 z-[101] h-10 w-10 rounded-lg bg-zinc-800 border border-zinc-700 hover:bg-zinc-700 transition-colors flex items-center justify-center"
+      id="scrollToTopBtn"
+      onClick={scrollToTop}
+      name="scrolltotopbutton"
+      aria-label="Scroll to top"
+    >
+      <span className="material-symbols-outlined text-lg align-middle text-zinc-300">
+        arrow_upward
+      </span>
+    </button>
   );
 }

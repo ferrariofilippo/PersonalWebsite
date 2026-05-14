@@ -1,25 +1,26 @@
 import '@/styles/globals.css';
 
 import Layout from '@/components/layout'
-import { Orbitron } from 'next/font/google' 
+import { Inter, JetBrains_Mono } from 'next/font/google'
 
-const orbitron = Orbitron({
-  weight: ['400', '600', '900'],
-  style: ['normal'],
+const inter = Inter({
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
 })
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-     <style jsx global>{`
-        html {
-          font-family: ${orbitron.style.fontFamily};
-        }
-      `}</style>
+    <div className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </div>
   )
 }

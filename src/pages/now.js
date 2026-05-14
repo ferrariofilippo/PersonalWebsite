@@ -10,72 +10,44 @@ export default function Now({ learnings, oss, books }) {
     <>
       <Head>
         <title>Filippo Ferrario • Now</title>
-        <meta
-          name="description"
-          content="What is Filippo Ferrario doing now?"
-        />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
-        <link
-          rel="icon"
-          href="/ferrariofilippo.png"
-        />
+        <meta name="description" content="What is Filippo Ferrario doing now?" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/ferrariofilippo.png" />
       </Head>
-      <div
-        className="min-h-screen xl:mx-32 lg:mx-24 md:mx-16 sm:mx-8 mx-1 mb-8"
-      >
+      <div className="min-h-screen">
         <Header />
-        <main
-          className="flex flex-col mt-5"
-        >
-          <h1
-            className='mt-3 text-center text-purple-600 sm:text-[6em] sm:uppercase text-6xl font-semibold mb-8'
-          >
-            Things I'm doing:
+        <main className="max-w-2xl mx-auto px-6 py-16">
+          <p className="font-mono text-xs text-zinc-500 mb-4">// now</p>
+          <h1 className="text-4xl sm:text-5xl font-semibold text-zinc-50 mb-16 leading-tight">
+            Things I&apos;m doing
           </h1>
-          <div
-            className='flex flex-col my-auto sm:mx-0 mx-2'
-          >
-            <h3
-              className="text-4xl mb-auto sm:me-auto font-semibold text-purple-400"
-            >
+
+          <section className="mb-12">
+            <h2 className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-4 text-left">
               Learning
-            </h3>
-            <ul
-              id="learning-list"
-              className="list-disc list-inside sm:me-auto sm:mx-0 mx-1"
-            >
+            </h2>
+            <ul className="space-y-2">
               <Learning learnings={learnings} />
             </ul>
-            <div
-              className='sm:ms-auto'
-            >
-              <h3
-                className="text-4xl mt-6 font-semibold text-purple-400"
-              >
-                Open-Source-Software
-              </h3>
-              <ul
-                id="oss-list"
-                className="list-disc list-inside mx-1"
-              >
-                <Oss oss={oss} />
-              </ul>
-            </div>
-            <h3
-              className="sm:mx-auto text-4xl mt-6 font-semibold text-purple-400"
-            >
+          </section>
+
+          <section className="mb-12 border-t border-zinc-800 pt-12">
+            <h2 className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-4 text-left">
+              Open Source
+            </h2>
+            <ul className="space-y-2">
+              <Oss oss={oss} />
+            </ul>
+          </section>
+
+          <section className="border-t border-zinc-800 pt-12">
+            <h2 className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-4 text-left">
               Reading
-            </h3>
-            <ul
-              id="reading-list"
-              className="sm:mx-auto list-disc list-inside sm:mx-0 mx-1"
-            >
+            </h2>
+            <ul className="space-y-2">
               <Books books={books} />
             </ul>
-          </div>
+          </section>
         </main>
       </div>
     </>
@@ -86,38 +58,14 @@ export async function getServerSideProps() {
   const supabase = createClient(
     process.env.SUPABASE_URL,
     process.env.SUPABASE_KEY,
-    {
-      persistSession: false
-    }
+    { persistSession: false }
   );
 
-  async function getLearnings() {
-    const { data } = await supabase.from('learning').select();
+  const [{ data: learnings }, { data: oss }, { data: books }] = await Promise.all([
+    supabase.from('learning').select(),
+    supabase.from('oss').select(),
+    supabase.from('books').select(),
+  ]);
 
-    return data;
-  }
-
-  async function getOss() {
-    const { data } = await supabase.from('oss').select();
-
-    return data;
-  }
-
-  async function getBooks() {
-    const { data } = await supabase.from('books').select();
-
-    return data;
-  }
-
-  const learnings = await getLearnings();
-  const oss = await getOss();
-  const books = await getBooks();
-
-  return {
-    props: {
-      learnings,
-      oss,
-      books
-    }
-  };
+  return { props: { learnings, oss, books } };
 }

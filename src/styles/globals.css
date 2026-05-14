@@ -3,49 +3,37 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #e5e5e5;
-  color: #9333ea;
+  background-color: #3f3f46;
+  color: #fafafa;
 }
 
 ::-moz-selection {
-  background-color: #e5e5e5;
-  color: #9333ea;
+  background-color: #3f3f46;
+  color: #fafafa;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #d8b4fe;
+  background-color: #18181b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #9333ea;
+  background-color: #3f3f46;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #7e22ce;
-}
-
-h2 {
-  text-align: center;
+  background-color: #52525b;
 }
 
 main {
   min-height: 90vh;
 }
 
-.divider {
-  height: 64px;
-  width: 100%;
-  margin: auto;
-  background-repeat: repeat-x;
-  background: url('/divider.png');
-}
-
 .text {
-  color: #e5e5e5;
+  color: #fafafa;
 }
 
 .logo {
@@ -55,20 +43,7 @@ main {
 
 .link:hover {
   cursor: pointer;
-  color: #f6edfe;
-  text-shadow:
-    0 0 1px #f6edfe,
-    0 0 2px #f6edfe,
-    0 0 6px #9333ea,
-    0 0 10px #9333ea,
-    0 0 12px #9333ea,
-    0 0 11px #9333ea,
-    0 0 15px #9333ea;
-}
-
-.nav-link:hover .plus-sign {
-  transition: rotate 0.1s;
-  rotate: -45deg;
+  color: #a78bfa;
 }
 
 @media screen and (max-width: 768px) {
